@@ -47,12 +47,10 @@ void UiManager::toggleFullScreen()
 {
     //Exit Fullscreen
     if (isFullScreen()) {
-        if (window_was_maximized_){
-            view_->showNormal();
+        view_->showNormal();
+
+        if (window_was_maximized_)
             view_->showMaximized();
-        }
-        else
-            view_->showNormal();
     }
     //Enter Fullscreen
     else {
