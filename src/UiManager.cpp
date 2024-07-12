@@ -25,8 +25,6 @@ void UiManager::loadUi()
     view_->setMinimumWidth(kMinWidth);
     view_->setMinimumHeight(kMinHeight);
 
-    view_->setWindowState(Qt::WindowState::WindowNoState);
-
     view_->setSource(QUrl(kMainQmlName));
     view_->setTitle(kAppTitle);
 
@@ -49,8 +47,10 @@ void UiManager::toggleFullScreen()
 {
     //Exit Fullscreen
     if (isFullScreen()) {
-        if (window_was_maximized_)
+        if (window_was_maximized_){
+            view_->showNormal();
             view_->showMaximized();
+        }
         else
             view_->showNormal();
     }
