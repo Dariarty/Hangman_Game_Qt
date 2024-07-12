@@ -18,19 +18,32 @@ const int kMinHeight = 600;
 
 namespace hangman {
 
-class UiManager : public QObject {
-  Q_OBJECT
-  Q_DISABLE_COPY(UiManager)
+class UiManager : public QObject
+{
+    Q_OBJECT
+    Q_DISABLE_COPY(UiManager)
+
+    Q_PROPERTY(bool isFullScreen READ isFullScreen NOTIFY isFullScreenChanged)
 
 public:
-  UiManager(QObject *parent = NULL);
-  ~UiManager() = default;
+    UiManager(QObject *parent = NULL);
+    ~UiManager() = default;
+
+    bool isFullScreen() const;
+
+    Q_INVOKABLE void fullScreenButtonPressed();
+
+signals:
+    void isFullScreenChanged(bool fullScreenState);
 
 private:
-  void qmlRegister();
-  void loadUi();
+    void qmlRegister();
+    void loadUi();
 
-  QQuickView *view_;
+    QQuickView *view_;
+
+    bool window_was_maximized_;
+    void toggleFullScreen();
 };
 
 } // namespace hangman

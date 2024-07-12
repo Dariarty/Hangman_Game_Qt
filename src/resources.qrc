@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
-        <file>resources/test.txt</file>
+	<file>resources/icons/enter_fullscreen.png</file>
+	<file>resources/icons/exit_fullscreen.png</file>
+    <file>resources/images/paper_background.jpg</file>
     </qresource>
 </RCC>
