@@ -22,11 +22,18 @@ void UiManager::loadUi()
 {
     view_->setResizeMode(QQuickView::SizeRootObjectToView);
 
-    view_->setMinimumWidth(kMinWidth);
-    view_->setMinimumHeight(kMinHeight);
+    view_->setWidth(view_->screen()->geometry().width() * 0.6);
+    view_->setHeight(view_->screen()->geometry().height() * 0.6);
+
+    view_->setMinimumWidth(view_->screen()->geometry().width() / 2);
+    view_->setMinimumHeight(view_->screen()->geometry().height() / 2);
+
+    view_->setTitle(kAppTitle);
+    view_->setIcon(QIcon(":/resources/icons/hangman.png"));
 
     view_->setSource(QUrl(kMainQmlName));
-    view_->setTitle(kAppTitle);
+
+    connect(view_->engine(), &QQmlApplicationEngine::quit, &QGuiApplication::quit);
 
     //Show App in FullScreen
     toggleFullScreen();
@@ -40,6 +47,13 @@ bool UiManager::isFullScreen() const
 void UiManager::fullScreenButtonPressed()
 {
     toggleFullScreen();
+}
+
+void UiManager::minimizeButtonPressed()
+{
+    view_->showMinimized();
+
+    emit isFullScreenChanged(isFullScreen());
 }
 
 //private

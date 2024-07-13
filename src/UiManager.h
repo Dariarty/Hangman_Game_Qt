@@ -10,10 +10,6 @@
 namespace {
 const QString kMainQmlName = "qrc:/qml/Hangman.qml";
 const QString kAppTitle = "Hangman";
-
-const int kMinWidth = 800;
-const int kMinHeight = 600;
-
 } // namespace
 
 namespace hangman {
@@ -32,6 +28,7 @@ public:
     bool isFullScreen() const;
 
     Q_INVOKABLE void fullScreenButtonPressed();
+    Q_INVOKABLE void minimizeButtonPressed();
 
 signals:
     void isFullScreenChanged(bool fullScreenState);

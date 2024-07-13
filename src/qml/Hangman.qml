@@ -1,10 +1,16 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.12
 import QtQuick.Controls.Imagine 2.12
+import QtQuick.Layouts 2.12
 
 Rectangle{
     id: root
     color: "transparent"
+
+    readonly property double refHeight: 1080.0
+    readonly property double refWidth: 1920.0
+
+    property double ratio: Math.min(root.height / refHeight, root.width / refWidth)
 
     Image{
         anchors.fill: root
@@ -12,30 +18,29 @@ Rectangle{
         fillMode: Image.PreserveAspectCrop
     }
 
-    MouseArea{
-        id: fullScreenButtonArea
-        anchors.right: parent.right
-        anchors.top: parent.top
-        anchors.rightMargin: root.height * 0.03
-        anchors.topMargin: root.height * 0.03
+    StackLayout{
+        id: layout
+        anchors.fill: parent
+        currentIndex: 0
 
-        hoverEnabled: true
+        MenuScreen{
 
-        height: root.height * 0.05
-        width: root.height * 0.05
-
-        Image{
-            source: UiManager.isFullScreen ?
-                        "qrc:/resources/icons/exit_fullscreen.png" :
-                        "qrc:/resources/icons/enter_fullscreen.png"
-            anchors.fill: parent
-            opacity: fullScreenButtonArea.containsPress ? 0.75 :
-                fullScreenButtonArea.containsMouse ? 0.5 : 1
         }
 
-        onClicked: {
-            UiManager.fullScreenButtonPressed()
+        GameScreen{
+
         }
     }
 
+    WindowButtons{
+        id: windowButtonsArea
+
+        anchors{
+            right: root.right
+            top: root.top
+            rightMargin: 30 * ratio
+            topMargin: 30 * ratio
+        }
+
+    }
 }
