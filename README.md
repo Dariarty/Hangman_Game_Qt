@@ -1,1 +1,1 @@
-# Hangman_Game_Qt_Desktop
+# Hangman_Game_Qt
