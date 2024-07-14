@@ -33,7 +33,9 @@ void UiManager::loadUi()
 
     view_->setSource(QUrl(kMainQmlName));
 
-    connect(view_->engine(), &QQmlApplicationEngine::quit, &QGuiApplication::quit);
+    connect(view_->engine(), &QQmlApplicationEngine::quit, this, [=](){
+        view_->close();
+    });
 
     //Show App in FullScreen
     toggleFullScreen();

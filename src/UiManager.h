@@ -6,6 +6,7 @@
 #include <QQmlEngine>
 #include <QQuickView>
 #include <QtQml>
+#include <QScreen>
 
 namespace {
 const QString kMainQmlName = "qrc:/qml/Hangman.qml";
