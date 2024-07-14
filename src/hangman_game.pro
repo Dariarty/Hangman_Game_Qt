@@ -6,7 +6,8 @@ SOURCES += \
 
 RESOURCES += \ 
         qml.qrc \
-        resources.qrc
+        resources.qrc \
+        words.qrc
 
 HEADERS += \
     UiManager.h

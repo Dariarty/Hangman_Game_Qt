@@ -2,5 +2,15 @@
     <qresource prefix="/">
         <file>qml/Hangman.qml</file>
         <file>qtquickcontrols2.conf</file>
+        <file>qml/WindowButtons.qml</file>
+        <file>qml/MenuScreen.qml</file>
+        <file>qml/GameScreen.qml</file>
+        <file>qml/OptionsArea.qml</file>
+        <file>qml/GameModeArea.qml</file>
+        <file>qml/MenuButton.qml</file>
+        <file>qml/KeyboardButton.qml</file>
+        <file>qml/Keyboard_ru.qml</file>
+        <file>qml/WordArea.qml</file>
+        <file>qml/WordLetter.qml</file>
     </qresource>
 </RCC>
