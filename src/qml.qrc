@@ -8,5 +8,9 @@
         <file>qml/OptionsArea.qml</file>
         <file>qml/GameModeArea.qml</file>
         <file>qml/MenuButton.qml</file>
+        <file>qml/KeyboardButton.qml</file>
+        <file>qml/Keyboard_ru.qml</file>
+        <file>qml/WordArea.qml</file>
+        <file>qml/WordLetter.qml</file>
     </qresource>
 </RCC>

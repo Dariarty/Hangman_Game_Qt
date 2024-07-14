@@ -8,8 +8,6 @@ Button{
     width: parent.width - 300 * ratio
     height: 100 * ratio
 
-    anchors.horizontalCenter: parent.horizontalCenter
-
     font.family: "Comic Sans MS"
     font.pointSize: 255
 

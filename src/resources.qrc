@@ -6,5 +6,17 @@
         <file>resources/images/paper_background.jpg</file>
         <file>resources/icons/minimize.png</file>
         <file>resources/icons/exit.png</file>
+        <file>resources/icons/quit_to_menu.png</file>
+        <file>resources/images/stages/stage0.png</file>
+        <file>resources/images/stages/stage1.png</file>
+        <file>resources/images/stages/stage2.png</file>
+        <file>resources/images/stages/stage3.png</file>
+        <file>resources/images/stages/stage4.png</file>
+        <file>resources/images/stages/stage5.png</file>
+        <file>resources/images/stages/stage6.png</file>
+        <file>resources/images/stages/stage7.png</file>
+        <file>resources/images/stages/stage8.png</file>
+        <file>resources/images/stages/stage9.png</file>
+        <file>resources/images/stages/stage10.png</file>
     </qresource>
 </RCC>

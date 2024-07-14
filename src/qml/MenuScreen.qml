@@ -33,8 +33,8 @@ Rectangle {
                 left: parent.left
                 bottom: parent.bottom
                 right: parent.right
-                rightMargin: 400 * ratio
-                leftMargin: 400 * ratio
+                rightMargin: 350 * ratio
+                leftMargin: 350 * ratio
             }
         }
     }

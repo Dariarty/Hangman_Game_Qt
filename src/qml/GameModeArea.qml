@@ -30,6 +30,7 @@ Rectangle {
         MenuButton{
             text: "1000 частых слов"
 
+            anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width - 200 * ratio
 
             onClicked: {

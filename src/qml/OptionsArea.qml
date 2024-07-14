@@ -17,7 +17,7 @@ Rectangle {
 
             Text{
                 fontSizeMode: Text.Fit
-                text: "Выберите язык"
+                text: "Выберите язык (В разработке)"
                 anchors.fill: parent
                 color: "#5C4033"
                 font.pointSize: 255
@@ -29,10 +29,13 @@ Rectangle {
         //Кнопки языков
         MenuButton{
             text: "Русский"
+            anchors.horizontalCenter: parent.horizontalCenter
         }
 
         MenuButton{
-            text: "English"
+            text: "English (coming soon)"
+            anchors.horizontalCenter: parent.horizontalCenter
+            enabled: false
         }
     }
 }
