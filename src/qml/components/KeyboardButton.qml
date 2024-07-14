@@ -11,11 +11,14 @@ Rectangle{
            / parent.rows
 
     property string text
+    property bool used: false
+    property bool guessed: false
 
     MouseArea {
         id: keyboardButton
 
-        hoverEnabled: true
+        hoverEnabled: !used
+        enabled: !used
         anchors.fill: parent
 
         Text{
@@ -27,6 +30,14 @@ Rectangle{
             font.family: "Comic Sans MS"
             color: parent.containsPress ? "#5C4033" :
                 parent.containsMouse ? "sienna" : "#5C4033"
+        }
+
+        Image{
+            source: guessed ? "qrc:/resources/icons/rightLetter.png"
+                            : "qrc:/resources/icons/wrongLetter.png"
+            anchors.fill: parent
+            fillMode: Image.Stretch
+            visible: used
         }
 
     }

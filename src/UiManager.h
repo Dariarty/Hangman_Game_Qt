@@ -9,7 +9,7 @@
 #include <QScreen>
 
 namespace {
-const QString kMainQmlName = "qrc:/qml/Hangman.qml";
+const QString kMainQmlName = "qrc:/qml/main/Hangman.qml";
 const QString kAppTitle = "Hangman";
 } // namespace
 

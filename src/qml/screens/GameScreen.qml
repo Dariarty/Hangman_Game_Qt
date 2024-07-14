@@ -2,6 +2,9 @@ import QtQuick 2.15
 import QtQuick.Controls 2.12
 import QtQuick.Controls.Imagine 2.12
 
+import "../areas"
+import "../keyboards"
+
 Rectangle {
     id: gameRoot
     color: "transparent"

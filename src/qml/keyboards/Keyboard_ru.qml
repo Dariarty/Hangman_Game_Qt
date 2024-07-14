@@ -1,5 +1,7 @@
 import QtQuick 2.15
 
+import "../components"
+
 Grid {
     id: keyboardGrid
 

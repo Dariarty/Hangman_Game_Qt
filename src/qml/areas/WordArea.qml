@@ -3,6 +3,8 @@ import QtQuick.Controls 2.12
 import QtQuick.Controls.Imagine 2.12
 import QtQuick.Layouts 1.15
 
+import "../components"
+
 Rectangle {
     id: rootWordArea
     width: parent.width * 0.6 - anchors.leftMargin - anchors.rightMargin

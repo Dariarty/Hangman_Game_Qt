@@ -3,6 +3,9 @@ import QtQuick.Controls 2.12
 import QtQuick.Controls.Imagine 2.12
 import QtQuick.Layouts 1.15
 
+import "../screens"
+import "../areas"
+
 Rectangle{
     id: root
     color: "transparent"
@@ -32,7 +35,7 @@ Rectangle{
         }
     }
 
-    WindowButtons{
+    WindowButtonsArea{
         id: windowButtonsArea
 
         anchors{

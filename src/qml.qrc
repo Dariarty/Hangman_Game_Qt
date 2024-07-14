@@ -1,16 +1,16 @@
 <RCC>
     <qresource prefix="/">
-        <file>qml/Hangman.qml</file>
+        <file>qml/main/Hangman.qml</file>
+        <file>qml/screens/MenuScreen.qml</file>
+        <file>qml/screens/GameScreen.qml</file>
+        <file>qml/areas/OptionsArea.qml</file>
+        <file>qml/areas/GameModeArea.qml</file>
+        <file>qml/areas/WindowButtonsArea.qml</file>
+        <file>qml/areas/WordArea.qml</file>
+        <file>qml/components/MenuButton.qml</file>
+        <file>qml/components/KeyboardButton.qml</file>
+        <file>qml/components/WordLetter.qml</file>
+        <file>qml/keyboards/Keyboard_ru.qml</file>
         <file>qtquickcontrols2.conf</file>
-        <file>qml/WindowButtons.qml</file>
-        <file>qml/MenuScreen.qml</file>
-        <file>qml/GameScreen.qml</file>
-        <file>qml/OptionsArea.qml</file>
-        <file>qml/GameModeArea.qml</file>
-        <file>qml/MenuButton.qml</file>
-        <file>qml/KeyboardButton.qml</file>
-        <file>qml/Keyboard_ru.qml</file>
-        <file>qml/WordArea.qml</file>
-        <file>qml/WordLetter.qml</file>
     </qresource>
 </RCC>

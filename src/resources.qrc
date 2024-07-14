@@ -18,5 +18,7 @@
         <file>resources/images/stages/stage8.png</file>
         <file>resources/images/stages/stage9.png</file>
         <file>resources/images/stages/stage10.png</file>
+        <file>resources/icons/wrongLetter.png</file>
+        <file>resources/icons/rightLetter.png</file>
     </qresource>
 </RCC>
