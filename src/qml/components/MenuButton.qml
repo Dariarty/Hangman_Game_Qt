@@ -13,8 +13,8 @@ Button{
 
     hoverEnabled: true
 
-    property string color: "sienna"
-    property string downColor: "#5C4033"
+    property string color: "#5C4033"
+    property string downColor:  "sienna"
     property string hoverColor: "peru"
 
     background: Rectangle {

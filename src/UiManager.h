@@ -8,6 +8,9 @@
 #include <QtQml>
 #include <QScreen>
 
+#include "GameHandler.h"
+#include "MenuHandler.h"
+
 namespace {
 const QString kMainQmlName = "qrc:/qml/main/Hangman.qml";
 const QString kAppTitle = "Hangman";
@@ -38,7 +41,9 @@ private:
     void qmlRegister();
     void loadUi();
 
-    QQuickView *view_;
+    QScopedPointer<QQuickView> view_;
+
+    QScopedPointer<MenuHandler> menu_;
 
     bool window_was_maximized_;
     void toggleFullScreen();

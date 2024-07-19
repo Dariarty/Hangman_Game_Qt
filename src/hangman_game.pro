@@ -1,6 +1,8 @@
 QT += quick
 
 SOURCES += \
+        GameHandler.cpp \
+        MenuHandler.cpp \
         UiManager.cpp \
         main.cpp
 
@@ -10,5 +12,7 @@ RESOURCES += \
         words.qrc
 
 HEADERS += \
+    GameHandler.h \
+    MenuHandler.h \
     UiManager.h
 

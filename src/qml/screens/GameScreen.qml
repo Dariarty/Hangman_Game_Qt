@@ -104,7 +104,7 @@ Rectangle {
 
             Image{
                 anchors.fill: parent
-                source: "qrc:/resources/images/stages/stage9.png"
+                source: "qrc:/resources/images/stages/stage10.png"
                 fillMode: Image.PreserveAspectFit
             }
         }

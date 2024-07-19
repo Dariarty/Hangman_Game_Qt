@@ -15,6 +15,7 @@ Grid {
 
     KeyboardButton{
         text: "А"
+
     }
 
     KeyboardButton{
@@ -27,10 +28,14 @@ Grid {
 
     KeyboardButton{
         text: "Г"
+        used: true
+        guessed: false
     }
 
     KeyboardButton{
         text: "Д"
+        used: true
+        guessed: true
     }
 
     KeyboardButton{
