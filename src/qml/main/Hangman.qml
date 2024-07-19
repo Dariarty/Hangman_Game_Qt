@@ -10,6 +10,11 @@ Rectangle{
     id: root
     color: "transparent"
 
+    FontLoader{
+        id: comicSans
+        source: "qrc:/resources/fonts/Comic Sans MS.ttf"
+    }
+
     readonly property double refHeight: 1080.0
     readonly property double refWidth: 1920.0
 

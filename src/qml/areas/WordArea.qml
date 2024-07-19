@@ -64,6 +64,7 @@ Rectangle {
             id: wordRect
             Layout.preferredWidth: ((symbolHeight * widthToHeightMultiplier) + wordView.spacing ) * wordModel.count
             Layout.preferredHeight: 250 * ratio
+            Layout.alignment: Qt.AlignHCenter
 
             color: "transparent"
 

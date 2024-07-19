@@ -20,5 +20,6 @@
         <file>resources/images/stages/stage10.png</file>
         <file>resources/icons/wrongLetter.png</file>
         <file>resources/icons/rightLetter.png</file>
+        <file>resources/fonts/Comic Sans MS.ttf</file>
     </qresource>
 </RCC>
