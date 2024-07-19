@@ -14,7 +14,7 @@ Row{
 
         visible: UiManager.isFullScreen
 
-        hoverEnabled: true
+        hoverEnabled: visible
 
         height: 60 * ratio
         width: 60 * ratio
@@ -34,7 +34,7 @@ Row{
     MouseArea{
         id: fullScreenButtonArea
 
-        hoverEnabled: true
+        hoverEnabled: visible
 
         height: 60 * ratio
         width: 60 * ratio
@@ -58,7 +58,7 @@ Row{
 
         visible: UiManager.isFullScreen
 
-        hoverEnabled: true
+        hoverEnabled: visible
 
         height: 60 * ratio
         width: 60 * ratio
