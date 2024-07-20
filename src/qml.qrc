@@ -12,5 +12,9 @@
         <file>qml/components/WordLetter.qml</file>
         <file>qml/keyboards/Keyboard_ru.qml</file>
         <file>qtquickcontrols2.conf</file>
+        <file>qml/components/WindowButton.qml</file>
+        <file>qml/areas/KeyboardArea.qml</file>
+        <file>qml/areas/DrawingArea.qml</file>
+        <file>qml/areas/TitleArea.qml</file>
     </qresource>
 </RCC>

@@ -10,15 +10,31 @@ Rectangle{
     id: root
     color: "transparent"
 
+    readonly property double refWidth:
+        1920.0
+
+    readonly property double refHeight:
+        1080.0
+
+    readonly property double ratio:
+        Math.min(root.height / refHeight, root.width / refWidth)
+
+    readonly property string standartFont:
+        "Comic Sans MS"
+
+    readonly property color standartColor:
+        "#5C4033"
+
+    readonly property color hoverColor:
+        "sienna"
+
+    readonly property color downColor:
+        "peru"
+
     FontLoader{
         id: comicSans
         source: "qrc:/resources/fonts/Comic Sans MS.ttf"
     }
-
-    readonly property double refHeight: 1080.0
-    readonly property double refWidth: 1920.0
-
-    property double ratio: Math.min(root.height / refHeight, root.width / refWidth)
 
     Image{
         anchors.fill: root
@@ -32,11 +48,11 @@ Rectangle{
         currentIndex: 0
 
         MenuScreen{
-
+            id: menu
         }
 
         GameScreen{
-
+            id: game
         }
     }
 

@@ -9,70 +9,29 @@ Row{
 
     spacing: 30 * ratio
 
-    MouseArea{
-        id: minimizeButtonArea
+    WindowButton{
+        id: minimizeButton
 
         visible: UiManager.isFullScreen
-
-        hoverEnabled: visible
-
-        height: 60 * ratio
-        width: 60 * ratio
-
-        Image{
-            source: "qrc:/resources/icons/minimize.png"
-            anchors.fill: parent
-            opacity: parent.containsPress ? 0.75 :
-                parent.containsMouse ? 0.5 : 1
-        }
-
-        onClicked: {
-            UiManager.minimizeButtonPressed()
-        }
+        source: "qrc:/resources/icons/minimize.png"
+        onClicked: UiManager.minimizeButtonPressed()
     }
 
-    MouseArea{
+    WindowButton{
         id: fullScreenButtonArea
 
-        hoverEnabled: visible
-
-        height: 60 * ratio
-        width: 60 * ratio
-
-        Image{
-            source: UiManager.isFullScreen ?
-                        "qrc:/resources/icons/exit_fullscreen.png" :
-                        "qrc:/resources/icons/enter_fullscreen.png"
-            anchors.fill: parent
-            opacity: parent.containsPress ? 0.75 :
-                parent.containsMouse ? 0.5 : 1
-        }
-
-        onClicked: {
-            UiManager.fullScreenButtonPressed()
-        }
+        source: UiManager.isFullScreen ?
+                    "qrc:/resources/icons/exit_fullscreen.png" :
+                    "qrc:/resources/icons/enter_fullscreen.png"
+        onClicked: UiManager.fullScreenButtonPressed()
     }
 
-    MouseArea{
+    WindowButton{
         id: exitButtonArea
 
         visible: UiManager.isFullScreen
-
-        hoverEnabled: visible
-
-        height: 60 * ratio
-        width: 60 * ratio
-
-        Image{
-            source: "qrc:/resources/icons/exit.png"
-            anchors.fill: parent
-            opacity: parent.containsPress ? 0.75 :
-                parent.containsMouse ? 0.5 : 1
-        }
-
-        onClicked: {
-            Qt.quit()
-        }
+        source: "qrc:/resources/icons/exit.png"
+        onClicked: Qt.quit()
     }
 
 }

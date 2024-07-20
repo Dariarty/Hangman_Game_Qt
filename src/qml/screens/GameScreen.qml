@@ -10,115 +10,29 @@ Rectangle {
     color: "transparent"
 
     //Title Area
-    Rectangle{
-        id: titleRect
-        width: parent.width
-        height: 100 * ratio
-        color: "transparent"
-
-        anchors.top: parent.top
-        anchors.topMargin: 20 * ratio
-
-        Text{
-            fontSizeMode: Text.Fit
-            text: "Угадай слово"
-            anchors.fill: parent
-            color: "#5C4033"
-            font.pointSize: 255
-            horizontalAlignment: Qt.AlignHCenter
-            font.family: "Comic Sans MS"
-        }
-
-        Rectangle{
-            color: "#5C4033"
-            height: 5 * ratio
-            anchors{
-                left: parent.left
-                bottom: parent.bottom
-                right: parent.right
-                rightMargin: 350 * ratio
-                leftMargin: 350 * ratio
-            }
-        }
+    TitleArea{
+        id: title
+        text: "Угадай слово"
     }
 
-    //GameArea
-    Rectangle{
-        id: gameAreaRect
-
-        anchors{
-            top: titleRect.bottom
-            bottom: parent.bottom
-            left: parent.left
-            right: parent.right
-        }
-
-        color: "transparent"
-
-        //Screen Keyboard Area
-        Rectangle{
-            id: keyboardRect
-
-            height: parent.height * 0.3
-            color: "transparent"
-
-            anchors{
-                left: parent.left
-                right: parent.right
-                bottom: parent.bottom
-                bottomMargin: 20 * ratio
-                rightMargin: 200 * ratio
-                leftMargin: 200 * ratio
-            }
-
-            Keyboard_ru{
-                id: keyboard
-            }
-
-            Rectangle{
-                color: "#5C4033"
-                height: 5 * ratio
-                anchors{
-                    left: parent.left
-                    top: parent.top
-                    right: parent.right
-                }
-            }
-        }
-
-        //Drawing Area
-        Rectangle{
-            id: drawingRect
-
-            width: parent.width * 0.4 - anchors.leftMargin
-
-            anchors{
-                left: parent.left
-                top: parent.top
-                bottom: keyboardRect.top
-                topMargin: 50 * ratio
-                margins: 50 * ratio
-            }
-
-            color: "transparent"
-
-            Image{
-                anchors.fill: parent
-                source: "qrc:/resources/images/stages/stage10.png"
-                fillMode: Image.PreserveAspectFit
-            }
-        }
-
-        //Word Area
-        WordArea{
-
-        }
-
+    //Drawing Area
+    DrawingArea{
+        id: drawingRect
     }
 
-    //Кнопка выхода в главное меню
+    //Screen Keyboard Area
+    KeyboardArea{
+        id: keyboardRect
+    }
+
+    //Word Area
+    WordArea{
+        id: wordRect
+    }
+
+    //Exit to menu Button
     MouseArea{
-        id: fullScreenButtonArea
+        id: exitToMenuButton
 
         anchors{
             left: parent.left
@@ -143,6 +57,5 @@ Rectangle {
             layout.currentIndex = 0
         }
     }
-
 
 }

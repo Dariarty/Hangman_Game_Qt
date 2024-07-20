@@ -9,32 +9,34 @@ Rectangle {
     id: rootWordArea
     width: parent.width * 0.6 - anchors.leftMargin - anchors.rightMargin
 
-    property double widthToHeightMultiplier: 0.64
+    readonly property double widthToHeightMultiplier: 0.64
 
-    property double symbolHeight:
+    readonly property double symbolHeight:
         Math.min((rootWordArea.width / wordModel.count) * 0.8 * ( 1 / widthToHeightMultiplier),
                  wordRect.height)
 
     anchors{
         right: parent.right
-        top: parent.top
+        top: title.bottom
         bottom: keyboardRect.top
-        margins: 50 * ratio
+        rightMargin: 80
+        leftMargin: 30
+        bottomMargin: 50
     }
 
     ListModel{
         id: wordModel
 
         ListElement{
-            displayedLetter: "Т"
+            displayedLetter: "В"
         }
 
         ListElement{
-            displayedLetter: "Ю"
+            displayedLetter: "И"
         }
 
         ListElement{
-            displayedLetter: "Л"
+            displayedLetter: "С"
         }
 
         ListElement{
@@ -42,11 +44,17 @@ Rectangle {
         }
 
         ListElement{
-            displayedLetter: "Н"
+            displayedLetter: "Л"
         }
 
         ListElement{
-            displayedLetter: "Ь"
+            displayedLetter: "И"
+        }
+        ListElement{
+            displayedLetter: "Ц"
+        }
+        ListElement{
+            displayedLetter: "А"
         }
     }
 
@@ -79,9 +87,9 @@ Rectangle {
                 spacing: symbolHeight / 8
 
                 model: wordModel
+
                 delegate: WordLetter{
                     text: displayedLetter
-
                     height: rootWordArea.symbolHeight
                     anchors.verticalCenter: parent.verticalCenter
                 }
@@ -98,13 +106,15 @@ Rectangle {
             color: "transparent"
 
             Text{
+                id: gameEndMessage
+
                 fontSizeMode: Text.Fit
                 text: "Вы победили!"
                 anchors.fill: parent
                 color: "green"
-                font.pointSize: 255
+                font.pointSize: 200
                 horizontalAlignment: Qt.AlignHCenter
-                font.family: "Comic Sans MS"
+                font.family: standartFont
             }
 
         }

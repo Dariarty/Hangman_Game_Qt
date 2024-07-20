@@ -21,10 +21,10 @@ Rectangle {
                 fontSizeMode: Text.Fit
                 text: "Играть"
                 anchors.fill: parent
-                color: "#5C4033"
+                color: standartColor
                 font.pointSize: 255
                 horizontalAlignment: Qt.AlignHCenter
-                font.family: "Comic Sans MS"
+                font.family: standartFont
             }
         }
 
@@ -34,9 +34,9 @@ Rectangle {
 
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width - 200 * ratio
+            height: 100 * ratio
 
             onClicked: {
-                //PLACEHOLDER
                 layout.currentIndex = 1
             }
         }

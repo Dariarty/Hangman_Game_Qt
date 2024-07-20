@@ -1,8 +1,9 @@
 import QtQuick 2.15
+import QtQuick.Layouts 1.0
 
 import "../components"
 
-Grid {
+GridLayout {
     id: keyboardGrid
 
     anchors.fill: parent
@@ -15,7 +16,6 @@ Grid {
 
     KeyboardButton{
         text: "А"
-
     }
 
     KeyboardButton{
@@ -28,14 +28,10 @@ Grid {
 
     KeyboardButton{
         text: "Г"
-        used: true
-        guessed: false
     }
 
     KeyboardButton{
         text: "Д"
-        used: true
-        guessed: true
     }
 
     KeyboardButton{

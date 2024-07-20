@@ -5,26 +5,20 @@ import QtQuick.Controls.Imagine 2.12
 Button{
     id: button
 
-    width: parent.width - 300 * ratio
-    height: 100 * ratio
-
-    font.family: "Comic Sans MS"
-    font.pointSize: 255
+    font.family: standartFont
+    font.pointSize: 80
 
     hoverEnabled: true
 
-    property string color: "#5C4033"
-    property string downColor:  "sienna"
-    property string hoverColor: "peru"
-
     background: Rectangle {
-        color: button.down ? button.downColor :
-               button.hovered ? button.hoverColor : button.color
+        color: button.down ? downColor :
+               button.hovered ? hoverColor : standartColor
         radius: 80
     }
 
     contentItem: Text{
         id: contentText
+
         font: button.font
         text: button.text
         horizontalAlignment: Text.AlignHCenter
@@ -32,4 +26,5 @@ Button{
         fontSizeMode: Text.Fit
         color: "white"
     }
+
 }

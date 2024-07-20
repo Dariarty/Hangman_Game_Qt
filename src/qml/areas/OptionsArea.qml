@@ -19,12 +19,12 @@ Rectangle {
 
             Text{
                 fontSizeMode: Text.Fit
-                text: "Выберите язык (В разработке)"
+                text: "Выберите язык"
                 anchors.fill: parent
-                color: "#5C4033"
+                color: standartColor
                 font.pointSize: 255
                 horizontalAlignment: Qt.AlignHCenter
-                font.family: "Comic Sans MS"
+                font.family: standartFont
             }
         }
 
@@ -32,12 +32,15 @@ Rectangle {
         MenuButton{
             text: "Русский"
             anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width - 300 * ratio
+            height: 100 * ratio
         }
 
         MenuButton{
-            text: "English (coming soon)"
+            text: "English"
             anchors.horizontalCenter: parent.horizontalCenter
-            enabled: false
+            width: parent.width - 300 * ratio
+            height: 100 * ratio
         }
     }
 }

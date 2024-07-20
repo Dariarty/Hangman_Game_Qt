@@ -1,44 +1,59 @@
 import QtQuick 2.15
+import QtQuick.Layouts 1.0
 
-Rectangle{
-    id: letterRect
-
-    color: "transparent"
-
-    width: (parent.width - ((parent.columns - 1) * parent.columnSpacing ))
-           / parent.columns
-    height: (parent.height - ((parent.rows - 1) * parent.rowSpacing ))
-           / parent.rows
+MouseArea{
+    id: rootArea
 
     property string text
-    property bool used: false
-    property bool guessed: false
 
-    MouseArea {
-        id: keyboardButton
+    Layout.fillWidth: true
+    Layout.fillHeight: true
 
-        hoverEnabled: !used
-        enabled: !used
+    state: "active"
+
+    states: [
+        State{
+            name: "active"
+            PropertyChanges { target: usedLetterImage; visible: false }
+            PropertyChanges { target: rootArea; hoverEnabled: true }
+            PropertyChanges { target: rootArea; enabled: true }
+        },
+        State{
+            name: "rightGuess"
+            PropertyChanges { target: usedLetterImage; visible: true }
+            PropertyChanges { target: usedLetterImage; source: "qrc:/resources/icons/rightLetter.png" }
+            PropertyChanges { target: rootArea; hoverEnabled: false }
+            PropertyChanges { target: rootArea; enabled: false }
+        },
+        State{
+            name: "wrongGuess"
+            PropertyChanges { target: usedLetterImage; visible: true }
+            PropertyChanges { target: usedLetterImage; source: "qrc:/resources/icons/wrongLetter.png" }
+            PropertyChanges { target: rootArea; hoverEnabled: false }
+            PropertyChanges { target: rootArea; enabled: false }
+        }
+    ]
+
+    Text{
+        id: keyboardButtonText
         anchors.fill: parent
 
-        Text{
-            fontSizeMode: Text.Fit
-            text: letterRect.text
-            anchors.fill: parent
-            font.pointSize: 255
-            horizontalAlignment: Qt.AlignHCenter
-            font.family: "Comic Sans MS"
-            color: parent.containsPress ? "#5C4033" :
-                parent.containsMouse ? "sienna" : "#5C4033"
-        }
-
-        Image{
-            source: guessed ? "qrc:/resources/icons/rightLetter.png"
-                            : "qrc:/resources/icons/wrongLetter.png"
-            anchors.fill: parent
-            fillMode: Image.Stretch
-            visible: used
-        }
-
+        text: rootArea.text
+        color: parent.containsPress ? downColor :
+            parent.containsMouse ? hoverColor : standartColor
+        font.family: standartFont
+        fontSizeMode: Text.Fit
+        font.pointSize: 80
+        horizontalAlignment: Qt.AlignHCenter
     }
+
+    Image{
+        id: usedLetterImage
+        anchors.fill: parent
+
+        fillMode: Image.Stretch
+        visible: false
+        opacity: 0.8
+    }
+
 }

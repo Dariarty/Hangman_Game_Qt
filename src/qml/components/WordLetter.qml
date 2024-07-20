@@ -6,6 +6,7 @@ Rectangle{
     id: letterRect
 
     property string text
+
     color: "transparent"
 
     width: height * rootWordArea.widthToHeightMultiplier
@@ -16,14 +17,14 @@ Rectangle{
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
         anchors.fill: parent
-        font.pointSize: 255
-        font.family: "Comic Sans MS"
+        font.pointSize: 160
+        font.family: standartFont
     }
 
     Rectangle{
         height: parent.height * 0.07
         anchors.bottom: parent.bottom
         width: parent.width
-        color: "#5C4033"
+        color: standartColor
     }
 }
