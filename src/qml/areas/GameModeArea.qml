@@ -11,7 +11,7 @@ Rectangle {
         anchors.fill: parent
         spacing: 30 * ratio
 
-        //Надпись Играть
+        //Play label
         Rectangle{
             width: parent.width
             height: 80 * ratio
@@ -28,7 +28,7 @@ Rectangle {
             }
         }
 
-        //Кнопки режимов игры
+        //Gamemodes buttons
         MenuButton{
             text: "1000 частых слов"
 

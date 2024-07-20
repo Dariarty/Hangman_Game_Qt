@@ -11,7 +11,7 @@ Rectangle {
         anchors.fill: parent
         spacing: 30 * ratio
 
-        //Надпись выберите язык
+        //Choose language Label
         Rectangle{
             width: parent.width
             height: 80 * ratio
@@ -28,7 +28,7 @@ Rectangle {
             }
         }
 
-        //Кнопки языков
+        //Language Buttons
         MenuButton{
             text: "Русский"
             anchors.horizontalCenter: parent.horizontalCenter
