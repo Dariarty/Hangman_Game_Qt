@@ -16,5 +16,6 @@
         <file>qml/areas/KeyboardArea.qml</file>
         <file>qml/areas/DrawingArea.qml</file>
         <file>qml/areas/TitleArea.qml</file>
+        <file>qml/keyboards/Keyboard_en.qml</file>
     </qresource>
 </RCC>

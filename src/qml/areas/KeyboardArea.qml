@@ -7,6 +7,8 @@ import "../keyboards"
 Rectangle{
     id: keyboardRoot
 
+    property url source
+
     height: parent.height * 0.3
     color: "transparent"
 
@@ -19,8 +21,10 @@ Rectangle{
         leftMargin: 200 * ratio
     }
 
-    Keyboard_ru{
-        id: keyboard
+    Loader{
+        id: keyboardLoader
+        source: keyboardRoot.source
+        anchors.fill: parent
     }
 
     Rectangle{
