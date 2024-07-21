@@ -4,7 +4,9 @@
 [![ru](https://img.shields.io/badge/lang-ru-red.svg)](https://github.com/Dariarty/Hangman_Game_Qt/blob/main/README.ru.md)
 
 Игра "Виселица" с графическим интерфейсом. </br>
-Написана на C++/Qt/QML
+Написана на C++/Qt/QML. </br>
+Приложение поддерживает динамический перевод. </br>
+В данный момент есть поддержка русского и английского языков. </br>
 
 ## Screenshots
 ![alt text](assets/game_screenshot.png)
