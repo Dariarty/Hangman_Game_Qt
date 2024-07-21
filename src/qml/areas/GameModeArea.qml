@@ -19,7 +19,7 @@ Rectangle {
 
             Text{
                 fontSizeMode: Text.Fit
-                text: "Играть"
+                text: qsTr("Play")
                 anchors.fill: parent
                 color: standartColor
                 font.pointSize: 255
@@ -30,7 +30,7 @@ Rectangle {
 
         //Gamemodes buttons
         MenuButton{
-            text: "1000 частых слов"
+            text: qsTr("1500 frequent words")
 
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width - 200 * ratio

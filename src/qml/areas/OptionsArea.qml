@@ -19,7 +19,7 @@ Rectangle {
 
             Text{
                 fontSizeMode: Text.Fit
-                text: "Выберите язык"
+                text: qsTr("Choose language")
                 anchors.fill: parent
                 color: standartColor
                 font.pointSize: 255

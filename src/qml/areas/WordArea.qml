@@ -50,9 +50,11 @@ Rectangle {
         ListElement{
             displayedLetter: "И"
         }
+
         ListElement{
             displayedLetter: "Ц"
         }
+
         ListElement{
             displayedLetter: "А"
         }
@@ -109,7 +111,7 @@ Rectangle {
                 id: gameEndMessage
 
                 fontSizeMode: Text.Fit
-                text: "Вы победили!"
+                text: qsTr("Victory!")
                 anchors.fill: parent
                 color: "green"
                 font.pointSize: 200
@@ -128,7 +130,7 @@ Rectangle {
             MenuButton{
                 id: playAgainButton
 
-                text: "Играть еще"
+                text: qsTr("Play again")
 
                 height: parent.height
                 width: parent.width / 2 - anchors.rightMargin
@@ -140,7 +142,7 @@ Rectangle {
             MenuButton{
                 id: exitMenuButton
 
-                text: "В меню"
+                text: qsTr("To menu")
 
                 width: parent.width / 2 - anchors.leftMargin
                 height: parent.height
