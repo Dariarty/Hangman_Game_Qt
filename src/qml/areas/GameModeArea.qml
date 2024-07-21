@@ -39,5 +39,43 @@ Rectangle {
             onClicked: GameMenu.playFrequentWords()
         }
 
+        Rectangle{
+            height: 5 * ratio
+            width: parent.width
+            color: standartColor
+        }
+
+        Rectangle{
+            width: parent.width
+            height: 80 * ratio
+            color: "transparent"
+
+            Text{
+                fontSizeMode: Text.Fit
+                text: qsTr("Words by topic")
+                anchors.fill: parent
+                color: standartColor
+                font.pointSize: 255
+                horizontalAlignment: Qt.AlignHCenter
+                font.family: standartFont
+            }
+        }
+
+        Rectangle{
+            width: parent.width
+            height: 80 * ratio
+            color: "transparent"
+
+            Text{
+                fontSizeMode: Text.Fit
+                text: qsTr("Coming soon!")
+                anchors.fill: parent
+                color: standartColor
+                font.pointSize: 255
+                horizontalAlignment: Qt.AlignHCenter
+                font.family: standartFont
+            }
+        }
+
     }
 }

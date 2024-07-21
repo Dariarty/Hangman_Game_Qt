@@ -13,6 +13,16 @@
         <source>1500 frequent words</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../qml/areas/GameModeArea.qml" line="55"/>
+        <source>Words by topic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/areas/GameModeArea.qml" line="71"/>
+        <source>Coming soon!</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>GameScreen</name>
@@ -51,12 +61,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/areas/WordArea.qml" line="123"/>
+        <location filename="../qml/areas/WordArea.qml" line="129"/>
         <source>Play again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/areas/WordArea.qml" line="135"/>
+        <location filename="../qml/areas/WordArea.qml" line="144"/>
         <source>To menu</source>
         <translation type="unfinished"></translation>
     </message>

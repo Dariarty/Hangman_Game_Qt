@@ -13,6 +13,16 @@
         <source>1500 frequent words</source>
         <translation>1000 частых слов</translation>
     </message>
+    <message>
+        <location filename="../qml/areas/GameModeArea.qml" line="55"/>
+        <source>Words by topic</source>
+        <translation>Слова по темам</translation>
+    </message>
+    <message>
+        <location filename="../qml/areas/GameModeArea.qml" line="71"/>
+        <source>Coming soon!</source>
+        <translation>В разработке!</translation>
+    </message>
 </context>
 <context>
     <name>GameScreen</name>
@@ -51,12 +61,12 @@
         <translation>Поражение</translation>
     </message>
     <message>
-        <location filename="../qml/areas/WordArea.qml" line="123"/>
+        <location filename="../qml/areas/WordArea.qml" line="129"/>
         <source>Play again</source>
         <translation>Играть еще</translation>
     </message>
     <message>
-        <location filename="../qml/areas/WordArea.qml" line="135"/>
+        <location filename="../qml/areas/WordArea.qml" line="144"/>
         <source>To menu</source>
         <translation>В меню</translation>
     </message>
