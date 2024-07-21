@@ -17,5 +17,7 @@
         <file>qml/areas/DrawingArea.qml</file>
         <file>qml/areas/TitleArea.qml</file>
         <file>qml/keyboards/Keyboard_en_US.qml</file>
+        <file>qml/screens/CreditsScreen.qml</file>
+        <file>qml/components/MenuLabel.qml</file>
     </qresource>
 </RCC>

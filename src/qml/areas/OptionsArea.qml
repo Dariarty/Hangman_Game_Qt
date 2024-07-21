@@ -11,24 +11,10 @@ Rectangle {
         anchors.fill: parent
         spacing: 30 * ratio
 
-        //Choose language Label
-        Rectangle{
-            width: parent.width
-            height: 80 * ratio
-            color: "transparent"
-
-            Text{
-                fontSizeMode: Text.Fit
-                text: qsTr("Choose language")
-                anchors.fill: parent
-                color: standartColor
-                font.pointSize: 255
-                horizontalAlignment: Qt.AlignHCenter
-                font.family: standartFont
-            }
+        MenuLabel{
+            text: qsTr("Choose language")
         }
 
-        //Language Buttons
         MenuButton{
             text: "Русский"
             anchors.horizontalCenter: parent.horizontalCenter

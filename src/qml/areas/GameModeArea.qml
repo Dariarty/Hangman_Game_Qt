@@ -11,24 +11,10 @@ Rectangle {
         anchors.fill: parent
         spacing: 30 * ratio
 
-        //Play label
-        Rectangle{
-            width: parent.width
-            height: 80 * ratio
-            color: "transparent"
-
-            Text{
-                fontSizeMode: Text.Fit
-                text: qsTr("Play")
-                anchors.fill: parent
-                color: standartColor
-                font.pointSize: 255
-                horizontalAlignment: Qt.AlignHCenter
-                font.family: standartFont
-            }
+        MenuLabel{
+            text: qsTr("Play")
         }
 
-        //Gamemodes buttons
         MenuButton{
             text: qsTr("1500 frequent words")
 
@@ -45,36 +31,12 @@ Rectangle {
             color: standartColor
         }
 
-        Rectangle{
-            width: parent.width
-            height: 80 * ratio
-            color: "transparent"
-
-            Text{
-                fontSizeMode: Text.Fit
-                text: qsTr("Words by topic")
-                anchors.fill: parent
-                color: standartColor
-                font.pointSize: 255
-                horizontalAlignment: Qt.AlignHCenter
-                font.family: standartFont
-            }
+        MenuLabel{
+            text: qsTr("Words by topic")
         }
 
-        Rectangle{
-            width: parent.width
-            height: 80 * ratio
-            color: "transparent"
-
-            Text{
-                fontSizeMode: Text.Fit
-                text: qsTr("Coming soon!")
-                anchors.fill: parent
-                color: standartColor
-                font.pointSize: 255
-                horizontalAlignment: Qt.AlignHCenter
-                font.family: standartFont
-            }
+        MenuLabel{
+            text: qsTr("Coming soon!")
         }
 
     }
