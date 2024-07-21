@@ -4,8 +4,8 @@
 [![ru](https://img.shields.io/badge/lang-ru-red.svg)](https://github.com/Dariarty/Hangman_Game_Qt_Desktop/blob/main/README.ru.md)
 
 GUI Hangman game made with C++/Qt/QML. </br> 
-Application supports dynamcic translation. </br>
-Game can be played using English and Russian languages. 
+Application supports dynamic translations. </br>
+Game can be played using English and Russian languages. </br>
 
 
 ## Screenshots
