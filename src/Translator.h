@@ -12,6 +12,8 @@ class Translator : public QObject
     Q_OBJECT
     Q_DISABLE_COPY(Translator)
 
+    Q_PROPERTY(QString language READ language NOTIFY languageChanged)
+
 public:
     Translator(QObject *parent = NULL);
     ~Translator() = default;
@@ -21,6 +23,9 @@ public:
     QString language() const;
 
     Q_INVOKABLE void setLanguage(const QString &newLanguage);
+
+signals:
+    void languageChanged();
 
 private:
     QTranslator *translator_;

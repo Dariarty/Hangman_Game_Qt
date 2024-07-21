@@ -34,6 +34,7 @@ Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width - 300 * ratio
             height: 100 * ratio
+            onClicked: Translator.setLanguage("ru_RU")
         }
 
         MenuButton{
@@ -41,6 +42,7 @@ Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width - 300 * ratio
             height: 100 * ratio
+            onClicked: Translator.setLanguage("en_US")
         }
     }
 }

@@ -5,10 +5,10 @@ namespace hangman {
 //public
 UiManager::UiManager(QObject *parent)
     : QObject(parent)
-    , view_(new QQuickView())
     , translator_(new Translator())
     , menu_(new MenuHandler())
     , game_(new GameHandler())
+    , view_(new QQuickView())
     , window_was_maximized_(false)
 {
     translator_->initTranslation();
@@ -22,8 +22,6 @@ void UiManager::qmlRegister()
 {
     view_->engine()->rootContext()->setContextProperty("UiManager", this);
     view_->engine()->rootContext()->setContextProperty("Translator", translator_.data());
-    //view_->engine()->rootContext()->setContextProperty("Menu", menu_.data());
-    //view_->engine()->rootContext()->setContextProperty("Game", game_.data());
 }
 
 void UiManager::loadUi()
@@ -39,11 +37,16 @@ void UiManager::loadUi()
     view_->setTitle(kAppTitle);
     view_->setIcon(QIcon(":/resources/icons/hangman.png"));
 
-    view_->setSource(QUrl(kMainQmlName));
+    //Connect closing signal
+    connect(view_->engine(), &QQmlApplicationEngine::quit, this, [=]() { view_->close(); });
 
-    connect(view_->engine(), &QQmlApplicationEngine::quit, this, [=](){
-        view_->close();
+    //Connect retranslating UI
+    connect(translator_.data(), &Translator::languageChanged, this, [=]() {
+        view_->engine()->retranslate();
     });
+
+    //Set Source QML File
+    view_->setSource(QUrl(kMainQmlName));
 
     //Show App in FullScreen
     toggleFullScreen();

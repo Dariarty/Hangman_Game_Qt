@@ -29,6 +29,9 @@ QString Translator::language() const
 void Translator::setLanguage(const QString &newLanguage)
 {
     translationLoaded_ = translator_->load(":/translations/hangman_game_" + newLanguage + ".qm");
+
+    if (translationLoaded_)
+        emit languageChanged();
 }
 
 } // namespace hangman

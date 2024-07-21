@@ -23,7 +23,7 @@ Rectangle {
     //Screen Keyboard Area
     KeyboardArea{
         id: keyboardRect
-        source: "qrc:/qml/keyboards/Keyboard_en_US.qml"
+        source: "qrc:/qml/keyboards/Keyboard_" + Translator.language + ".qml"
     }
 
     //Word Area

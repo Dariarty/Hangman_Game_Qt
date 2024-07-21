@@ -42,11 +42,11 @@ private:
     void qmlRegister();
     void loadUi();
 
-    QScopedPointer<QQuickView> view_;
-
     QScopedPointer<Translator> translator_;
     QScopedPointer<MenuHandler> menu_;
     QScopedPointer<GameHandler> game_;
+
+    QScopedPointer<QQuickView> view_;
 
     bool window_was_maximized_;
     void toggleFullScreen();
