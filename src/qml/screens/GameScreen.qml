@@ -56,6 +56,7 @@ Rectangle {
 
         onClicked: {
             layout.currentIndex = 0
+            Game.abandonGame();
         }
     }
 

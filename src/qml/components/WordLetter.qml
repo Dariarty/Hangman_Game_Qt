@@ -7,6 +7,8 @@ Rectangle{
 
     property string text
 
+    property bool failedGuess
+
     color: "transparent"
 
     width: height * rootWordArea.widthToHeightMultiplier
@@ -19,6 +21,8 @@ Rectangle{
         anchors.fill: parent
         font.pointSize: 160
         font.family: standartFont
+        color: failedGuess ? "red" : wordColor
+        font.capitalization: Font.AllUppercase
     }
 
     Rectangle{

@@ -15,49 +15,47 @@ Rectangle {
         Math.min((rootWordArea.width / wordModel.count) * 0.8 * ( 1 / widthToHeightMultiplier),
                  wordRect.height)
 
+    Connections{
+        target: Game
+        function onRoundStarted(wordLength){
+            layout.currentIndex = 1
+
+            wordModel.clear()
+
+            for(var i = 0; i < wordLength; i++){
+                wordModel.append({displayedLetter: "", failed: false})
+            }
+
+            gameEndMessageRect.visible = false
+            gameEndButtonsRect.visible = false
+        }
+
+        function onRoundFinished(victory){
+            gameEndMessageRect.visible = true
+            gameEndButtonsRect.visible = true
+
+            gameEndMessage.text = victory ? qsTr("Victory!") : qsTr("Defeat")
+            gameEndMessage.color = victory ? "green" : "red"
+        }
+
+        function onOpenLetter(letter, position, success){
+            wordModel.setProperty(position, "displayedLetter", letter)
+            wordModel.setProperty(position, "failed", !success)
+        }
+    }
+
     anchors{
         right: parent.right
         top: title.bottom
         bottom: keyboardRect.top
         rightMargin: 80
         leftMargin: 30
-        bottomMargin: 50
+        bottomMargin: 30
+        topMargin: 30
     }
 
     ListModel{
         id: wordModel
-
-        ListElement{
-            displayedLetter: "В"
-        }
-
-        ListElement{
-            displayedLetter: "И"
-        }
-
-        ListElement{
-            displayedLetter: "С"
-        }
-
-        ListElement{
-            displayedLetter: "Е"
-        }
-
-        ListElement{
-            displayedLetter: "Л"
-        }
-
-        ListElement{
-            displayedLetter: "И"
-        }
-
-        ListElement{
-            displayedLetter: "Ц"
-        }
-
-        ListElement{
-            displayedLetter: "А"
-        }
     }
 
     color: "transparent"
@@ -93,7 +91,7 @@ Rectangle {
                 delegate: WordLetter{
                     text: displayedLetter
                     height: rootWordArea.symbolHeight
-                    anchors.verticalCenter: parent.verticalCenter
+                    failedGuess: failed
                 }
 
             }
@@ -111,9 +109,7 @@ Rectangle {
                 id: gameEndMessage
 
                 fontSizeMode: Text.Fit
-                text: qsTr("Victory!")
                 anchors.fill: parent
-                color: "green"
                 font.pointSize: 200
                 horizontalAlignment: Qt.AlignHCenter
                 font.family: standartFont
@@ -136,6 +132,9 @@ Rectangle {
                 width: parent.width / 2 - anchors.rightMargin
                 anchors.rightMargin: 20 * ratio
                 anchors.left: parent.left
+                onClicked: {
+                    GameMenu.playAgain()
+                }
 
             }
 
@@ -151,6 +150,7 @@ Rectangle {
 
                 onClicked: {
                     layout.currentIndex = 0
+                    Game.abandonGame();
                 }
             }
         }

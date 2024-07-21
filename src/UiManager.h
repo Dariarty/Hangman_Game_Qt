@@ -42,9 +42,9 @@ private:
     void qmlRegister();
     void loadUi();
 
-    QScopedPointer<Translator> translator_;
-    QScopedPointer<MenuHandler> menu_;
-    QScopedPointer<GameHandler> game_;
+    QSharedPointer<Translator> translator_;
+    QSharedPointer<GameHandler> game_;
+    QSharedPointer<MenuHandler> menu_;
 
     QScopedPointer<QQuickView> view_;
 

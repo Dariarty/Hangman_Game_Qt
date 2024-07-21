@@ -1,8 +1,8 @@
 <RCC>
-    <qresource prefix="/en">
-        <file alias="en_words">resources/words/en/words.txt</file>
+    <qresource prefix="/en_US">
+        <file alias="frequent_words">resources/words/en_US/frequent_words.txt</file>
     </qresource>
-    <qresource prefix="/ru">
-        <file alias="ru_words">resources/words/ru/words.txt</file>
+    <qresource prefix="/ru_RU">
+        <file alias="frequent_words">resources/words/ru_RU/frequent_words.txt</file>
     </qresource>
 </RCC>

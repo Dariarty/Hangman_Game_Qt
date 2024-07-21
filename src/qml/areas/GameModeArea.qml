@@ -36,9 +36,7 @@ Rectangle {
             width: parent.width - 200 * ratio
             height: 100 * ratio
 
-            onClicked: {
-                layout.currentIndex = 1
-            }
+            onClicked: GameMenu.playFrequentWords()
         }
 
     }

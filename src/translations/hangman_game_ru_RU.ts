@@ -41,17 +41,22 @@
 <context>
     <name>WordArea</name>
     <message>
-        <location filename="../qml/areas/WordArea.qml" line="114"/>
+        <location filename="../qml/areas/WordArea.qml" line="37"/>
         <source>Victory!</source>
         <translation>Победа!</translation>
     </message>
     <message>
-        <location filename="../qml/areas/WordArea.qml" line="133"/>
+        <location filename="../qml/areas/WordArea.qml" line="37"/>
+        <source>Defeat</source>
+        <translation>Поражение</translation>
+    </message>
+    <message>
+        <location filename="../qml/areas/WordArea.qml" line="123"/>
         <source>Play again</source>
         <translation>Играть еще</translation>
     </message>
     <message>
-        <location filename="../qml/areas/WordArea.qml" line="145"/>
+        <location filename="../qml/areas/WordArea.qml" line="135"/>
         <source>To menu</source>
         <translation>В меню</translation>
     </message>

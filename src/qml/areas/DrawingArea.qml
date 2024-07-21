@@ -15,7 +15,7 @@ Image{
         margins: 50 * ratio
     }
 
-    source: "qrc:/resources/images/stages/stage10.png"
+    source: "qrc:/resources/images/stages/stage" + Game.errorsCount + ".png"
 
     fillMode: Image.PreserveAspectFit
 }

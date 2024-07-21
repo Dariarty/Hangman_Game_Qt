@@ -56,4 +56,21 @@ MouseArea{
         opacity: 0.8
     }
 
+    onClicked: {
+        Game.makeGuess(rootArea.text)
+    }
+
+    Connections{
+        target: Game
+        function onGuessMade(letter, success){
+            if(letter===rootArea.text){
+                state = success ? "rightGuess" : "wrongGuess"
+            }
+        }
+
+        function onRoundStarted(wordLength){
+            state = "active"
+        }
+    }
+
 }

@@ -31,6 +31,9 @@ Rectangle{
     readonly property color downColor:
         "peru"
 
+    readonly property color wordColor:
+        "#434a54"
+
     FontLoader{
         id: comicSans
         source: "qrc:/resources/fonts/Comic Sans MS.ttf"
