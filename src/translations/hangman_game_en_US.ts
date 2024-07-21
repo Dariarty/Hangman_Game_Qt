@@ -2,24 +2,42 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="en_US">
 <context>
+    <name>CreditsScreen</name>
+    <message>
+        <location filename="../qml/screens/CreditsScreen.qml" line="18"/>
+        <source>Developer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/screens/CreditsScreen.qml" line="24"/>
+        <source>Artem Darmogray</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/screens/CreditsScreen.qml" line="30"/>
+        <source>App Icon Designed by Freepik</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>GameModeArea</name>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="16"/>
+        <location filename="../qml/areas/GameModeArea.qml" line="15"/>
         <source>Play</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="21"/>
+        <location filename="../qml/areas/GameModeArea.qml" line="19"/>
         <source>1500 frequent words</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="37"/>
+        <location filename="../qml/areas/GameModeArea.qml" line="35"/>
         <source>Words by topic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="41"/>
+        <location filename="../qml/areas/GameModeArea.qml" line="39"/>
         <source>Coming soon!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -27,7 +45,7 @@
 <context>
     <name>GameScreen</name>
     <message>
-        <location filename="../qml/screens/GameScreen.qml" line="15"/>
+        <location filename="../qml/screens/GameScreen.qml" line="16"/>
         <source>Guess a word</source>
         <translation type="unfinished"></translation>
     </message>
@@ -35,7 +53,7 @@
 <context>
     <name>MenuScreen</name>
     <message>
-        <location filename="../qml/screens/MenuScreen.qml" line="14"/>
+        <location filename="../qml/screens/MenuScreen.qml" line="15"/>
         <source>Hangman</source>
         <translation type="unfinished"></translation>
     </message>
@@ -43,7 +61,7 @@
 <context>
     <name>OptionsArea</name>
     <message>
-        <location filename="../qml/areas/OptionsArea.qml" line="22"/>
+        <location filename="../qml/areas/OptionsArea.qml" line="15"/>
         <source>Choose language</source>
         <translation type="unfinished"></translation>
     </message>

@@ -8,13 +8,15 @@ Rectangle{
     height: 80 * ratio
     color: "transparent"
 
+    property color labelColor: standartColor
+
     property string text
 
     Text{
         fontSizeMode: Text.Fit
         text: rootRect.text
         anchors.fill: parent
-        color: standartColor
+        color: labelColor
         font.pointSize: 255
         horizontalAlignment: Qt.AlignHCenter
         font.family: standartFont

@@ -3,6 +3,7 @@ import QtQuick.Controls 2.12
 import QtQuick.Controls.Imagine 2.12
 
 import "../areas"
+import "../components"
 
 Rectangle {
     id: menuRoot
@@ -52,6 +53,13 @@ Rectangle {
         }
 
         color: standartColor
+    }
+
+    //Credits button
+    SwitchScreenButton{
+        id: creditsButton
+        source: "qrc:/resources/icons/info.png"
+        onClicked: layout.currentIndex = 2
     }
 
 }

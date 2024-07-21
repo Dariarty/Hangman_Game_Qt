@@ -57,6 +57,10 @@ Rectangle{
         GameScreen{
             id: game
         }
+
+        CreditsScreen{
+            id: credits
+        }
     }
 
     WindowButtonsArea{

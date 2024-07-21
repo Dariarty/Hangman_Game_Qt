@@ -4,6 +4,7 @@ import QtQuick.Controls.Imagine 2.12
 
 import "../areas"
 import "../keyboards"
+import "../components"
 
 Rectangle {
     id: gameRoot
@@ -32,28 +33,9 @@ Rectangle {
     }
 
     //Exit to menu Button
-    MouseArea{
+    SwitchScreenButton{
         id: exitToMenuButton
-
-        anchors{
-            left: parent.left
-            bottom: parent.bottom
-            leftMargin: 30 * ratio
-            bottomMargin: 30 * ratio
-        }
-
-        hoverEnabled: true
-
-        height: 100 * ratio
-        width: 100 * ratio
-
-        Image{
-            source: "qrc:/resources/icons/quit_to_menu.png"
-            anchors.fill: parent
-            opacity: parent.containsPress ? 0.75 :
-                parent.containsMouse ? 0.5 : 1
-        }
-
+        source: "qrc:/resources/icons/quit_to_menu.png"
         onClicked: {
             layout.currentIndex = 0
             Game.abandonGame();

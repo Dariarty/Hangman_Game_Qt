@@ -19,5 +19,6 @@
         <file>qml/keyboards/Keyboard_en_US.qml</file>
         <file>qml/screens/CreditsScreen.qml</file>
         <file>qml/components/MenuLabel.qml</file>
+        <file>qml/components/SwitchScreenButton.qml</file>
     </qresource>
 </RCC>
