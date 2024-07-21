@@ -11,7 +11,7 @@ Rectangle {
     //Title Area
     TitleArea{
         id: titleRect
-        text: "Виселица"
+        text: qsTr("Hangman")
     }
 
     //Left Area

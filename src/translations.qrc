@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>translations/hangman_game_ru_RU.qm</file>
+        <file>translations/hangman_game_en_US.qm</file>
+    </qresource>
+</RCC>

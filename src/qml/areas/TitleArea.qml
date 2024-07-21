@@ -22,6 +22,7 @@ Rectangle{
         font.pointSize: 255
         horizontalAlignment: Qt.AlignHCenter
         font.family: standartFont
+        anchors.bottomMargin: 5
     }
 
     Rectangle{

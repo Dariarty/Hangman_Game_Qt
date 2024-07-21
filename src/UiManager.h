@@ -10,6 +10,7 @@
 
 #include "GameHandler.h"
 #include "MenuHandler.h"
+#include "Translator.h"
 
 namespace {
 const QString kMainQmlName = "qrc:/qml/main/Hangman.qml";
@@ -43,7 +44,9 @@ private:
 
     QScopedPointer<QQuickView> view_;
 
+    QScopedPointer<Translator> translator_;
     QScopedPointer<MenuHandler> menu_;
+    QScopedPointer<GameHandler> game_;
 
     bool window_was_maximized_;
     void toggleFullScreen();

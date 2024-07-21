@@ -10,12 +10,12 @@
         <file>qml/components/MenuButton.qml</file>
         <file>qml/components/KeyboardButton.qml</file>
         <file>qml/components/WordLetter.qml</file>
-        <file>qml/keyboards/Keyboard_ru.qml</file>
+        <file>qml/keyboards/Keyboard_ru_RU.qml</file>
         <file>qtquickcontrols2.conf</file>
         <file>qml/components/WindowButton.qml</file>
         <file>qml/areas/KeyboardArea.qml</file>
         <file>qml/areas/DrawingArea.qml</file>
         <file>qml/areas/TitleArea.qml</file>
-        <file>qml/keyboards/Keyboard_en.qml</file>
+        <file>qml/keyboards/Keyboard_en_US.qml</file>
     </qresource>
 </RCC>
