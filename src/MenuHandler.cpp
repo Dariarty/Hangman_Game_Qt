@@ -1,5 +1,6 @@
 #include <QFile>
 #include <QRandomGenerator>
+#include <QTextStream>
 
 #include "MenuHandler.h"
 

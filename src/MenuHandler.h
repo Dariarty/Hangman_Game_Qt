@@ -2,6 +2,7 @@
 #define MENUHANDLER_H
 
 #include <QObject>
+#include <QSharedPointer>
 
 #include "GameHandler.h"
 #include "Translator.h"
