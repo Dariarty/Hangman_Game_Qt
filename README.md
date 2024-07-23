@@ -31,6 +31,10 @@ Hangman is a word guessing game. Program randomly chooses a word and the player 
 
 ![alt text](assets/en_US/defeat.png)
 
+<h3 align="center">Main Menu of the application</h3>
+
+![alt text](assets/en_US/menu.png)
+
 ## Building From Source Code
 Building both for Windows and Linux is supported. </br>
 Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building the app is Qt 6.7.2 </br>
