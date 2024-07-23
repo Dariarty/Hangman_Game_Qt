@@ -5,7 +5,7 @@
 
 Desktop Hangman game made with C++/Qt/QML. </br> 
 
-Hangman is a word guessing game. Program randomly chooses a word and the player tries to guess it by suggesting letters. Which each incorrect guess, a line is added to hangman drawing. If the picture is complete, player loses. To win, player has to correctly guess all letters in a word.
+Hangman is a word guessing game. Program randomly chooses a word and the player tries to guess it by suggesting letters. With each incorrect guess, a line is added to hangman drawing. If the picture is complete, player loses. To win, player has to correctly guess all letters in a word.
 
 ## Features
 
