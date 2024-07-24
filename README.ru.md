@@ -48,6 +48,22 @@ Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building 
 7.  Run qmake.</br>
 8.  Build the project in Qt Creator.</br>
 
+## Сборка исходного кода
+Поддерживается сборка на Windows и Linux.</br>
+Минимальная поддерживаемая версия Qt 5.10. Также приложение может быть собрано на Qt6, протестирована сборка на Qt 6.7.2 </br>
+
+1.  Загрузить Qt5.10+/Qt6, Qt Creator и компилятор MinGW.</br>
+2.  Сконфигурировать Desktop Kit в Qt Creator. </br>
+3.  Склонировать репозиторий
+     ```sh
+     git clone https://github.com/Dariarty/Hangman_Game_Qt.git
+     ```
+4.  Открыть файл проекта src/hangman_game.pro в Qt Creator</br>
+5.  Запустить команду lrelease для чтения файлов TS и генерации файлов перевода QM. </br>
+    Qt Creator > Tools > External > Linguist > Release Translations (lrelease) </br>
+6.  Запустить qmake.</br>
+7.  Собрать проект в Qt Creator.</br>
+
 ## Планы на разработку
 
 - [x] Разработать игру "Виселица" с базовым функционалом игровой логики 
