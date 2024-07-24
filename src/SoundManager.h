@@ -21,12 +21,16 @@ public:
     //Click Sound Effect
     Q_INVOKABLE void playSound_click();
 
+    //Correct Sound Effect
+    Q_INVOKABLE void playSound_correct();
+
 private:
     void initSound(QSoundEffect *effect, const QString &soundPath);
 
     //Sound Effects
     QSoundEffect pencilSound_;
     QSoundEffect clickSound_;
+    QSoundEffect correctSound_;
 };
 
 } // namespace hangman

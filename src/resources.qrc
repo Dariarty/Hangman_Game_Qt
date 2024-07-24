@@ -24,5 +24,6 @@
         <file>resources/fonts/Comic Sans MS.ttf</file>
         <file>resources/sounds/pencil.wav</file>
         <file>resources/sounds/click.wav</file>
+        <file>resources/sounds/correct.wav</file>
     </qresource>
 </RCC>

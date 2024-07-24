@@ -97,8 +97,9 @@ void GameHandler::processTurn(bool successfulTurn)
         return;
     }
 
-    //Increase Errors Counter
+    //Wrong guess
     if (!successfulTurn) {
+        //Increase Errors Counter
         errorsCount_++;
         emit errorsCountChanged();
     }
@@ -117,8 +118,8 @@ void GameHandler::processTurn(bool successfulTurn)
         return;
     }
 
-    //If game is not finished, play pencil writing sound
-    soundManager_->playSound_pencil();
+    //If game is not finished, play sound
+    successfulTurn ? soundManager_->playSound_correct() : soundManager_->playSound_pencil();
 }
 
 } // namespace hangman

@@ -10,6 +10,7 @@ SoundManager::SoundManager(QObject *parent)
 {
     initSound(&pencilSound_, ":/resources/sounds/pencil.wav");
     initSound(&clickSound_, ":/resources/sounds/click.wav");
+    initSound(&correctSound_, ":/resources/sounds/correct.wav");
 }
 
 void SoundManager::playSound_pencil()
@@ -20,6 +21,11 @@ void SoundManager::playSound_pencil()
 void SoundManager::playSound_click()
 {
     clickSound_.play();
+}
+
+void SoundManager::playSound_correct()
+{
+    correctSound_.play();
 }
 
 //private
