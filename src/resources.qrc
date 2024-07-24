@@ -22,5 +22,6 @@
         <file>resources/icons/wrongLetter.png</file>
         <file>resources/icons/rightLetter.png</file>
         <file>resources/fonts/Comic Sans MS.ttf</file>
+        <file>resources/sounds/pencil.wav</file>
     </qresource>
 </RCC>
