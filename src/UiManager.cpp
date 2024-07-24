@@ -25,6 +25,7 @@ void UiManager::qmlRegister()
     view_->engine()->rootContext()->setContextProperty("Translator", translator_.data());
     view_->engine()->rootContext()->setContextProperty("GameMenu", menu_.data());
     view_->engine()->rootContext()->setContextProperty("Game", game_.data());
+    view_->engine()->rootContext()->setContextProperty("Sound", soundManager_.data());
 }
 
 void UiManager::loadUi()
