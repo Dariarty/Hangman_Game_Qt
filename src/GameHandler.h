@@ -5,6 +5,9 @@
 #include <QObject>
 #include <QPair>
 #include <QSet>
+#include <QSharedPointer>
+
+#include "SoundManager.h"
 
 namespace hangman {
 
@@ -18,7 +21,7 @@ class GameHandler : public QObject
     Q_PROPERTY(int errorsCount READ errorsCount NOTIFY errorsCountChanged)
 
 public:
-    GameHandler(QObject *parent = NULL);
+    GameHandler(QSharedPointer<SoundManager> soundManager, QObject *parent = NULL);
     ~GameHandler() = default;
 
     void initGameRound(QString codeword);
@@ -46,6 +49,9 @@ signals:
     void errorsCountChanged();
 
 private:
+    //Sound Manager
+    QSharedPointer<SoundManager> soundManager_;
+
     //CodeWord - QPair contains symbol and flag if it is guessed
     QList<QPair<QChar, bool>> codeWord_;
 

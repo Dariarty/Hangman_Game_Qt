@@ -2,8 +2,9 @@
 
 namespace hangman {
 
-GameHandler::GameHandler(QObject *parent)
+GameHandler::GameHandler(QSharedPointer<SoundManager> soundManager, QObject *parent)
     : QObject(parent)
+    , soundManager_(soundManager)
     , errorsCount_(0)
     , roundState_(gameRoundState::none)
 {}
@@ -115,6 +116,9 @@ void GameHandler::processTurn(bool successfulTurn)
         roundState_ = gameRoundState::defeat;
         return;
     }
+
+    //If game is not finished, play pencil writing sound
+    soundManager_->playSound_pencil();
 }
 
 } // namespace hangman

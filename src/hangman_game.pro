@@ -3,6 +3,7 @@ QT += quick multimedia
 SOURCES += \
         GameHandler.cpp \
         MenuHandler.cpp \
+        SoundManager.cpp \
         Translator.cpp \
         UiManager.cpp \
         main.cpp
@@ -16,6 +17,7 @@ RESOURCES += \
 HEADERS += \
     GameHandler.h \
     MenuHandler.h \
+    SoundManager.h \
     Translator.h \
     UiManager.h
 

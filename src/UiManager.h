@@ -10,6 +10,7 @@
 
 #include "GameHandler.h"
 #include "MenuHandler.h"
+#include "SoundManager.h"
 #include "Translator.h"
 
 namespace {
@@ -42,6 +43,7 @@ private:
     void qmlRegister();
     void loadUi();
 
+    QSharedPointer<SoundManager> soundManager_;
     QSharedPointer<Translator> translator_;
     QSharedPointer<GameHandler> game_;
     QSharedPointer<MenuHandler> menu_;
