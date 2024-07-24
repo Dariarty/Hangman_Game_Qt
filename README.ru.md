@@ -33,21 +33,6 @@
 
 ![alt text](assets/ru_RU/menu.png)
 
-## Building From Source Code
-Building both for Windows and Linux is supported. </br>
-Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building the app is Qt 6.7.2 </br>
-1.  Download and install Qt5.10+/Qt6, Qt Creator and MinGW compiler.</br>
-2.  Configure Qt Creator Kit for Desktop. </br>
-3.  Clone the repo.
-     ```sh
-     git clone https://github.com/Dariarty/Hangman_Game_Qt.git
-     ```
-4.  Open src/hangman_game.pro in Qt Creator.</br>
-5.  Run lrelease tool to read the TS files and produce the QM translation files. </br>
-    Qt Creator > Tools > External > Linguist > Release Translations (lrelease) </br>
-7.  Run qmake.</br>
-8.  Build the project in Qt Creator.</br>
-
 ## Сборка исходного кода
 Поддерживается сборка на Windows и Linux.</br>
 Минимальная поддерживаемая версия Qt 5.10. Также приложение может быть собрано на Qt6, протестирована сборка на Qt 6.7.2 </br>
