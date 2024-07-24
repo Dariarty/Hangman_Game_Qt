@@ -23,5 +23,6 @@
         <file>resources/icons/rightLetter.png</file>
         <file>resources/fonts/Comic Sans MS.ttf</file>
         <file>resources/sounds/pencil.wav</file>
+        <file>resources/sounds/click.wav</file>
     </qresource>
 </RCC>

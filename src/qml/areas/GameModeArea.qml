@@ -22,7 +22,9 @@ Rectangle {
             width: parent.width - 200 * ratio
             height: 100 * ratio
 
-            onClicked: GameMenu.playFrequentWords()
+            onClicked: {
+                GameMenu.playFrequentWords()
+            }
         }
 
         Rectangle{

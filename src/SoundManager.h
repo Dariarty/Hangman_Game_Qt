@@ -2,7 +2,6 @@
 #define SOUNDMANAGER_H
 
 #include <QObject>
-#include <QScopedPointer>
 #include <QSoundEffect>
 
 namespace hangman {
@@ -19,11 +18,15 @@ public:
     //Pencil Sound Effect
     Q_INVOKABLE void playSound_pencil();
 
+    //Click Sound Effect
+    Q_INVOKABLE void playSound_click();
+
 private:
-    void initSound(QScopedPointer<QSoundEffect> &effect, QString soundPath);
+    void initSound(QSoundEffect *effect, const QString &soundPath);
 
     //Sound Effects
-    QScopedPointer<QSoundEffect> pencilSound_;
+    QSoundEffect pencilSound_;
+    QSoundEffect clickSound_;
 };
 
 } // namespace hangman
