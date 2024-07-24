@@ -48,15 +48,15 @@ Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building 
 7.  Run qmake.</br>
 8.  Build the project in Qt Creator.</br>
 
-## ToDo
+## Планы на разработку
 
-- [x] Develop Hangman game with basic functionality
-- [x] Design app's GUI
-- [x] Add multi-language support
-- [x] Publish first release
-- [ ] Add sound effects
-- [ ] Add gamemodes to choose words from a specific topic
-- [ ] Add support for more languages
+- [x] Разработать игру "Виселица" с базовым функционалом игровой логики 
+- [x] Разработать пользовательский интерфейс
+- [x] Добавить поддержку нескольких языков и динамический перевод 
+- [x] Опубликовать первый релиз
+- [ ] Добавить звуковые эффекты 
+- [ ] Добавить больше игровых режимов, выбор слов по темам 
+- [ ] Добавить больше языков
 
 Смотри [open issues](https://github.com/Dariarty/Hangman_Game_Qt/issues) для полного списка запланированных улучшений и известных проблем.
 
