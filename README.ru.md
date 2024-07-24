@@ -58,14 +58,15 @@ Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building 
 - [ ] Add gamemodes to choose words from a specific topic
 - [ ] Add support for more languages
 
-See the [open issues](https://github.com/Dariarty/Hangman_Game_Qt/issues) for a full list of planned features and known issues.
+Смотри [open issues](https://github.com/Dariarty/Hangman_Game_Qt/issues) для полного списка запланированных улучшений и известных проблем.
 
-## Attributions
+## Атрибуция
 
-Application Icon is designed by [Freepik](https://freepik.com)
+Иконка приложения создана [Freepik](https://freepik.com)
 
-## License
+## Лицензия
 
-Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+Распространяется под MIT License. Смотри [LICENSE](LICENSE) для полной информации.
+
 
 
