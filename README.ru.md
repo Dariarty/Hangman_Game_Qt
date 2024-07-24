@@ -17,23 +17,23 @@ Hangman is a word guessing game. Program randomly chooses a word and the player 
 
 
 
-## Screenshots
+## Скриншоты
 
-<h3 align="center">Gameplay</h3>
+<h3 align="center">Игровой процесс</h3>
 
-![alt text](assets/en_US/gameplay.png)
+![alt text](assets/ru_RU/gameplay.png)
 
-<h3 align="center">Player has successfully guessed a word</h3>
+<h3 align="center">Игрок успешно угадал слово</h3>
 
-![alt text](assets/en_US/victory.png)
+![alt text](assets/ru_RU/victory.png)
 
-<h3 align="center">Player has failed to guess a word</h3>
+<h3 align="center">Игрок не смог угадать слово</h3>
 
-![alt text](assets/en_US/defeat.png)
+![alt text](assets/ru_RU/defeat.png)
 
-<h3 align="center">Main Menu of the application</h3>
+<h3 align="center">Главное меню приложения</h3>
 
-![alt text](assets/en_US/menu.png)
+![alt text](assets/ru_RU/menu.png)
 
 ## Building From Source Code
 Building both for Windows and Linux is supported. </br>
