@@ -21,7 +21,7 @@ Rectangle{
         Math.min(root.height / refHeight, root.width / refWidth)
 
     readonly property string standartFont:
-        "Comic Sans MS"
+        itim.name
 
     readonly property color standartColor:
         "#5C4033"
@@ -36,8 +36,8 @@ Rectangle{
         "#434a54"
 
     FontLoader{
-        id: comicSans
-        source: "qrc:/resources/fonts/Comic Sans MS.ttf"
+        id: itim
+        source: "qrc:/resources/fonts/Itim.ttf"
     }
 
     Image{
