@@ -22,13 +22,8 @@ void SoundManager::playSound(const QString &soundName) const {
 
 void SoundManager::switchMute()
 {
-    muted_ = !muted_;
-
-    for (auto effect = effects_->begin(); effect != effects_->end(); effect++) {
-        effect.value()->setMuted(muted_);
-    }
-
-    emit mutedChanged();
+  muted_ = !muted_;
+  emit mutedChanged();
 }
 
 //private
