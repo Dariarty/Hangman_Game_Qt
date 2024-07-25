@@ -14,26 +14,25 @@ Hangman is a word guessing game. Program randomly chooses a word and the player 
 * Currently, the game is available in English and Russian.</br>
 * More than 1500 English words and 1000 Russian words.</br>
 * Fullscreen and Windowed modes.</br>
-
-
+* Sound effects when interacting with game's GUI.</br>
 
 ## Screenshots
 
 <h3 align="center">Gameplay</h3>
 
-![alt text](assets/en_US/gameplay.png)
+![alt text](assets/en_US/gameplay.jpg)
 
 <h3 align="center">Player has successfully guessed a word</h3>
 
-![alt text](assets/en_US/victory.png)
+![alt text](assets/en_US/victory.jpg)
 
 <h3 align="center">Player has failed to guess a word</h3>
 
-![alt text](assets/en_US/defeat.png)
+![alt text](assets/en_US/defeat.jpg)
 
 <h3 align="center">Main Menu of the application</h3>
 
-![alt text](assets/en_US/menu.png)
+![alt text](assets/en_US/menu.jpg)
 
 ## Building From Source Code
 Building both for Windows and Linux is supported. </br>
@@ -56,7 +55,7 @@ Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building 
 - [x] Design app's GUI
 - [x] Add multi-language support
 - [x] Publish first release
-- [ ] Add sound effects
+- [x] Add sound effects
 - [ ] Add gamemodes to choose words from a specific topic
 - [ ] Add support for more languages
 

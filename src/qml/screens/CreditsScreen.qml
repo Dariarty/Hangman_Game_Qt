@@ -26,9 +26,7 @@ Rectangle {
         }
     }
 
-    MenuLabel{
-        text: qsTr("App Icon Designed by Freepik")
-        height: creditsRoot.height / 16
+    Column{
 
         anchors{
             left: parent.left
@@ -36,6 +34,17 @@ Rectangle {
             bottom: parent.bottom
             margins: 150 * ratio
         }
+
+        MenuLabel{
+            text: qsTr("App Font: Itim Regular")
+            height: creditsRoot.height / 16
+        }
+
+        MenuLabel{
+            text: qsTr("App Icon Designed by Freepik")
+            height: creditsRoot.height / 16
+        }
+
     }
 
     //Exit to menu Button
