@@ -75,7 +75,7 @@ Rectangle{
 
         onClicked: {
             Sound.switchMute()
-            if(!Sound.muted) Sound.playSound("click")
+            Sound.playSound("click")
         }
 
         anchors{
