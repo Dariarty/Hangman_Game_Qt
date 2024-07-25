@@ -14,7 +14,12 @@
         <translation>Артем Дармограй</translation>
     </message>
     <message>
-        <location filename="../qml/screens/CreditsScreen.qml" line="30"/>
+        <location filename="../qml/screens/CreditsScreen.qml" line="39"/>
+        <source>App Font: Itim Regular</source>
+        <translation>Шрифт приложения: Itim Regular</translation>
+    </message>
+    <message>
+        <location filename="../qml/screens/CreditsScreen.qml" line="44"/>
         <source>App Icon Designed by Freepik</source>
         <translation>Иконка приложения разработана Freepik</translation>
     </message>
@@ -32,12 +37,12 @@
         <translation>1000 частых слов</translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="35"/>
+        <location filename="../qml/areas/GameModeArea.qml" line="37"/>
         <source>Words by topic</source>
         <translation>Слова по темам</translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="39"/>
+        <location filename="../qml/areas/GameModeArea.qml" line="41"/>
         <source>Coming soon!</source>
         <translation>В разработке!</translation>
     </message>

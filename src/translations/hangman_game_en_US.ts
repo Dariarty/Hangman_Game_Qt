@@ -14,7 +14,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/screens/CreditsScreen.qml" line="30"/>
+        <location filename="../qml/screens/CreditsScreen.qml" line="39"/>
+        <source>App Font: Itim Regular</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/screens/CreditsScreen.qml" line="44"/>
         <source>App Icon Designed by Freepik</source>
         <translation type="unfinished"></translation>
     </message>
@@ -32,12 +37,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="35"/>
+        <location filename="../qml/areas/GameModeArea.qml" line="37"/>
         <source>Words by topic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="39"/>
+        <location filename="../qml/areas/GameModeArea.qml" line="41"/>
         <source>Coming soon!</source>
         <translation type="unfinished"></translation>
     </message>
