@@ -15,6 +15,11 @@ SoundManager::SoundManager(QObject *parent)
     initSound("defeat", ":/resources/sounds/defeat.wav");
 }
 
+void SoundManager::playSound(const QString &soundName) const {
+  if (!muted_)
+    effects_->value(soundName)->play();
+}
+
 void SoundManager::switchMute()
 {
     muted_ = !muted_;
@@ -24,31 +29,6 @@ void SoundManager::switchMute()
     }
 
     emit mutedChanged();
-}
-
-void SoundManager::playSound_pencil() const
-{
-    effects_->value("pencil")->play();
-}
-
-void SoundManager::playSound_click() const
-{
-    effects_->value("click")->play();
-}
-
-void SoundManager::playSound_correct() const
-{
-    effects_->value("correct")->play();
-}
-
-void SoundManager::playSound_victory() const
-{
-    effects_->value("victory")->play();
-}
-
-void SoundManager::playSound_defeat() const
-{
-    effects_->value("defeat")->play();
 }
 
 //private

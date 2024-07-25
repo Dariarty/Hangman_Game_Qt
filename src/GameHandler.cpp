@@ -95,7 +95,7 @@ void GameHandler::processTurn(bool successfulTurn)
         emit roundFinished(true);
         roundState_ = gameRoundState::victory;
         //Play victory Sound
-        soundManager_->playSound_victory();
+        soundManager_->playSound("victory");
         return;
     }
 
@@ -115,7 +115,7 @@ void GameHandler::processTurn(bool successfulTurn)
         }
 
         //Play Defeat sound
-        soundManager_->playSound_defeat();
+        soundManager_->playSound("defeat");
 
         //End Round by defeat
         emit roundFinished(false);
@@ -124,7 +124,8 @@ void GameHandler::processTurn(bool successfulTurn)
     }
 
     //If game is not finished, play sound
-    successfulTurn ? soundManager_->playSound_correct() : soundManager_->playSound_pencil();
+    successfulTurn ? soundManager_->playSound("correct")
+                   : soundManager_->playSound("pencil");
 }
 
 } // namespace hangman

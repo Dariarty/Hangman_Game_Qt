@@ -20,25 +20,13 @@ public:
 
     bool muted() const { return muted_; }
 
+    // Play Sound
+    Q_INVOKABLE void playSound(const QString &soundName) const;
+
     //Mute or unmute all sounds
     Q_INVOKABLE void switchMute();
 
-    //Pencil Sound Effect
-    Q_INVOKABLE void playSound_pencil() const;
-
-    //Click Sound Effect
-    Q_INVOKABLE void playSound_click() const;
-
-    //Correct Sound Effect
-    Q_INVOKABLE void playSound_correct() const;
-
-    //Victory Sound Effect
-    Q_INVOKABLE void playSound_victory() const;
-
-    //Defeat Sound Effect
-    Q_INVOKABLE void playSound_defeat() const;
-
-signals:
+  signals:
     void mutedChanged();
 
 private:

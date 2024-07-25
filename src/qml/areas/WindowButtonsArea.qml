@@ -15,7 +15,7 @@ Row{
         visible: UiManager.isFullScreen
         source: "qrc:/resources/icons/minimize.png"
         onClicked: UiManager.minimizeButtonPressed()
-        onReleased: Sound.playSound_click()
+        onReleased: Sound.playSound("click")
     }
 
     WindowButton{
@@ -25,7 +25,7 @@ Row{
                     "qrc:/resources/icons/exit_fullscreen.png" :
                     "qrc:/resources/icons/enter_fullscreen.png"
         onClicked: UiManager.fullScreenButtonPressed()
-        onReleased: Sound.playSound_click()
+        onReleased: Sound.playSound("click")
     }
 
     WindowButton{

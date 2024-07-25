@@ -26,5 +26,5 @@ MouseArea{
             parent.containsMouse ? 0.5 : 1
     }
 
-    onReleased: Sound.playSound_click()
+    onReleased: Sound.playSound("click")
 }

@@ -73,7 +73,10 @@ Rectangle{
         height: 90 * ratio
         width: 90 * ratio
 
-        onClicked: Sound.switchMute()
+        onClicked: {
+            Sound.switchMute()
+            if(!Sound.muted) Sound.playSound("click")
+        }
 
         anchors{
             left: root.left
