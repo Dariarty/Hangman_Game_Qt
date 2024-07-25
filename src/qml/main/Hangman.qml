@@ -5,6 +5,7 @@ import QtQuick.Layouts 1.15
 
 import "../screens"
 import "../areas"
+import "../components"
 
 Rectangle{
     id: root
@@ -61,6 +62,26 @@ Rectangle{
         CreditsScreen{
             id: credits
         }
+    }
+
+    WindowButton{
+        id: soundMuteButton
+
+        source: Sound.muted ? "qrc:/resources/icons/sound_disabled.png" :
+                              "qrc:/resources/icons/sound_enabled.png"
+
+        height: 90 * ratio
+        width: 90 * ratio
+
+        onClicked: Sound.switchMute()
+
+        anchors{
+            left: root.left
+            top: root.top
+            leftMargin: 30 * ratio
+            topMargin: 30 * ratio
+        }
+
     }
 
     WindowButtonsArea{

@@ -8,6 +8,10 @@
         <file>resources/icons/exit.png</file>
         <file>resources/icons/info.png</file>
         <file>resources/icons/quit_to_menu.png</file>
+        <file>resources/icons/wrongLetter.png</file>
+        <file>resources/icons/rightLetter.png</file>
+        <file>resources/icons/sound_enabled.png</file>
+        <file>resources/icons/sound_disabled.png</file>
         <file>resources/images/stages/stage0.png</file>
         <file>resources/images/stages/stage1.png</file>
         <file>resources/images/stages/stage2.png</file>
@@ -19,11 +23,11 @@
         <file>resources/images/stages/stage8.png</file>
         <file>resources/images/stages/stage9.png</file>
         <file>resources/images/stages/stage10.png</file>
-        <file>resources/icons/wrongLetter.png</file>
-        <file>resources/icons/rightLetter.png</file>
         <file>resources/fonts/Comic Sans MS.ttf</file>
         <file>resources/sounds/pencil.wav</file>
         <file>resources/sounds/click.wav</file>
         <file>resources/sounds/correct.wav</file>
+        <file>resources/sounds/victory.wav</file>
+        <file>resources/sounds/defeat.wav</file>
     </qresource>
 </RCC>

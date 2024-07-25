@@ -94,6 +94,8 @@ void GameHandler::processTurn(bool successfulTurn)
         //End Round by victory
         emit roundFinished(true);
         roundState_ = gameRoundState::victory;
+        //Play victory Sound
+        soundManager_->playSound_victory();
         return;
     }
 
@@ -111,6 +113,9 @@ void GameHandler::processTurn(bool successfulTurn)
             if (!i->second)
                 emit openLetter(i->first, i - codeWord_.begin(), false);
         }
+
+        //Play Defeat sound
+        soundManager_->playSound_defeat();
 
         //End Round by defeat
         emit roundFinished(false);
