@@ -25,4 +25,6 @@ MouseArea{
         opacity: parent.containsPress ? 0.75 :
             parent.containsMouse ? 0.5 : 1
     }
+
+    onReleased: Sound.playSound("click")
 }

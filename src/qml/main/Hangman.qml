@@ -5,6 +5,7 @@ import QtQuick.Layouts 1.15
 
 import "../screens"
 import "../areas"
+import "../components"
 
 Rectangle{
     id: root
@@ -20,7 +21,7 @@ Rectangle{
         Math.min(root.height / refHeight, root.width / refWidth)
 
     readonly property string standartFont:
-        "Comic Sans MS"
+        itim.name
 
     readonly property color standartColor:
         "#5C4033"
@@ -35,8 +36,8 @@ Rectangle{
         "#434a54"
 
     FontLoader{
-        id: comicSans
-        source: "qrc:/resources/fonts/Comic Sans MS.ttf"
+        id: itim
+        source: "qrc:/resources/fonts/Itim.ttf"
     }
 
     Image{
@@ -61,6 +62,29 @@ Rectangle{
         CreditsScreen{
             id: credits
         }
+    }
+
+    WindowButton{
+        id: soundMuteButton
+
+        source: Sound.muted ? "qrc:/resources/icons/sound_disabled.png" :
+                              "qrc:/resources/icons/sound_enabled.png"
+
+        height: 90 * ratio
+        width: 90 * ratio
+
+        onClicked: {
+            Sound.switchMute()
+            Sound.playSound("click")
+        }
+
+        anchors{
+            left: root.left
+            top: root.top
+            leftMargin: 30 * ratio
+            topMargin: 30 * ratio
+        }
+
     }
 
     WindowButtonsArea{

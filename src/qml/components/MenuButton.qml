@@ -27,4 +27,6 @@ Button{
         color: "white"
     }
 
+    onReleased: Sound.playSound("click")
+
 }

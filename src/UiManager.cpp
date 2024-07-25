@@ -5,8 +5,9 @@ namespace hangman {
 //public
 UiManager::UiManager(QObject *parent)
     : QObject(parent)
+    , soundManager_(new SoundManager())
     , translator_(new Translator())
-    , game_(new GameHandler())
+    , game_(new GameHandler(soundManager_))
     , menu_(new MenuHandler(translator_, game_))
     , view_(new QQuickView())
     , window_was_maximized_(false)
@@ -24,6 +25,7 @@ void UiManager::qmlRegister()
     view_->engine()->rootContext()->setContextProperty("Translator", translator_.data());
     view_->engine()->rootContext()->setContextProperty("GameMenu", menu_.data());
     view_->engine()->rootContext()->setContextProperty("Game", game_.data());
+    view_->engine()->rootContext()->setContextProperty("Sound", soundManager_.data());
 }
 
 void UiManager::loadUi()
