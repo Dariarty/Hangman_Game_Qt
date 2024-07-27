@@ -6,7 +6,7 @@ Translator::Translator(QObject *parent)
     : QObject(parent), translator_(new QTranslator()),
       translationLoaded_(false) {
   alphabets_.insert("en_US", "abcdefghijklmnopqrstuvwxyz");
-  alphabets_.insert("ru_RU", "абвгдежзийлмнопрстуфхцчшщъыьэюя");
+  alphabets_.insert("ru_RU", "абвгдежзийклмнопрстуфхцчшщъыьэюя");
 }
 
 void Translator::initTranslation()
