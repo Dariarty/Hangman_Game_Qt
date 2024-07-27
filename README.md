@@ -13,7 +13,7 @@ Hangman is a word guessing game. Program randomly chooses a word and the player 
 * Application supports dynamic translations.</br>
 * Currently, the game is available in English and Russian.</br>
 * More than 1500 English words and 1000 Russian words.</br>
-* Fullscreen and Windowed modes.</br>
+* Fullscreen and Windowed modes, app is responsive to different window sizes.</br>
 * Sound effects when interacting with game's GUI.</br>
 
 ## Screenshots
@@ -34,7 +34,7 @@ Hangman is a word guessing game. Program randomly chooses a word and the player 
 
 ![alt text](assets/en_US/menu.jpg)
 
-## Building From Source Code
+## Building Source Code
 Building both for Windows and Linux is supported. </br>
 Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building the app is Qt 6.7.2 </br>
 1.  Download and install Qt5.10+/Qt6, Qt Creator and MinGW compiler.</br>
@@ -48,18 +48,6 @@ Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building 
     Qt Creator > Tools > External > Linguist > Release Translations (lrelease) </br>
 7.  Run qmake.</br>
 8.  Build the project in Qt Creator.</br>
-
-## ToDo
-
-- [x] Develop Hangman game with basic functionality
-- [x] Design app's GUI
-- [x] Add multi-language support
-- [x] Publish first release
-- [x] Add sound effects
-- [ ] Add gamemodes to choose words from a specific topic
-- [ ] Add support for more languages
-
-See the [open issues](https://github.com/Dariarty/Hangman_Game_Qt/issues) for a full list of planned features and known issues.
 
 ## Attributions
 
