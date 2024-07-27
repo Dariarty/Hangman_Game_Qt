@@ -14,6 +14,7 @@ Rectangle{
     width: height * rootWordArea.widthToHeightMultiplier
 
     Label{
+        id: letter
         text: parent.text
         fontSizeMode: Text.Fit
         verticalAlignment: Text.AlignVCenter
@@ -29,6 +30,7 @@ Rectangle{
         height: parent.height * 0.07
         anchors.bottom: parent.bottom
         width: parent.width
+        visible: letter.text !== " "
         color: standartColor
     }
 }

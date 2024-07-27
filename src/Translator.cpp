@@ -3,10 +3,11 @@
 namespace hangman {
 
 Translator::Translator(QObject *parent)
-    : QObject(parent)
-    , translator_(new QTranslator())
-    , translationLoaded_(false)
-{}
+    : QObject(parent), translator_(new QTranslator()),
+      translationLoaded_(false) {
+  alphabets_.insert("en_US", "abcdefghijklmnopqrstuvwxyz");
+  alphabets_.insert("ru_RU", "абвгдежзийлмнопрстуфхцчшщъыьэюя");
+}
 
 void Translator::initTranslation()
 {
@@ -24,6 +25,10 @@ void Translator::initTranslation()
 QString Translator::language() const
 {
     return translator_->language();
+}
+
+QString Translator::alphabet() const {
+  return alphabets_.value(translator_->language());
 }
 
 void Translator::setLanguage(const QString &newLanguage)

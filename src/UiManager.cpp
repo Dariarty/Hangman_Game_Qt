@@ -4,19 +4,19 @@ namespace hangman {
 
 //public
 UiManager::UiManager(QObject *parent)
-    : QObject(parent)
-    , soundManager_(new SoundManager())
-    , translator_(new Translator())
-    , game_(new GameHandler(soundManager_))
-    , menu_(new MenuHandler(translator_, game_))
-    , view_(new QQuickView())
-    , window_was_maximized_(false)
+    : QObject(parent),
+      soundManager_(new SoundManager()),
+      translator_(new Translator()),
+      game_(new GameHandler(soundManager_, translator_)),
+      menu_(new MenuHandler(translator_, game_)),
+      view_(new QQuickView()),
+      window_was_maximized_(false)
 {
-    translator_->initTranslation();
+  translator_->initTranslation();
 
-    qmlRegister();
+  qmlRegister();
 
-    loadUi();
+  loadUi();
 }
 
 void UiManager::qmlRegister()

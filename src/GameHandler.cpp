@@ -2,9 +2,11 @@
 
 namespace hangman {
 
-GameHandler::GameHandler(QSharedPointer<SoundManager> soundManager, QObject *parent)
+GameHandler::GameHandler(QSharedPointer<SoundManager> soundManager,
+                         QSharedPointer<Translator> translator, QObject *parent)
     : QObject(parent)
     , soundManager_(soundManager)
+    , translator_(translator)
     , errorsCount_(0)
     , roundState_(gameRoundState::none)
 {}
@@ -20,13 +22,21 @@ void GameHandler::initGameRound(QString word)
 
     //Write codeword
     for (int i = 0; i < word.length(); i++) {
-        codeWord_.append(qMakePair(word.at(i), false));
+        codeWord_.append(qMakePair(word.at(i).toLower(), false));
     }
 
     emit roundStarted(word.length());
 
     //Update Round State as ongoing
     roundState_ = gameRoundState::ongoing;
+
+    //Check if word contains symbols not in alphabet
+    for(auto i = codeWord_.begin(); i < codeWord_.end(); i++){
+      if(translator_->alphabet().contains(i->first))
+          continue;
+      i->second = true;
+      emit openLetter(i->first, i - codeWord_.begin(), true);
+    }
 }
 
 void GameHandler::makeGuess(const QChar &letter)
@@ -90,7 +100,7 @@ bool GameHandler::checkLetter(const QChar &letter)
 void GameHandler::processTurn(bool successfulTurn)
 {
     //Check if game Won
-    if (successfulTurn && wordGuessed()) {
+    if (wordGuessed()) {
         //End Round by victory
         emit roundFinished(true);
         roundState_ = gameRoundState::victory;

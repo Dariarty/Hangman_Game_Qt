@@ -2,6 +2,7 @@
 #define TRANSLATOR_H
 
 #include <QGuiApplication>
+#include <QMap>
 #include <QObject>
 #include <QTranslator>
 
@@ -22,6 +23,8 @@ public:
 
     QString language() const;
 
+    QString alphabet() const;
+
     Q_INVOKABLE void setLanguage(const QString &newLanguage);
 
 signals:
@@ -31,6 +34,8 @@ private:
     QTranslator *translator_;
 
     bool translationLoaded_;
+
+    QMap<QString, QString> alphabets_;
 };
 
 } // namespace hangman
