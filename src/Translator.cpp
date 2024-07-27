@@ -35,8 +35,10 @@ void Translator::setLanguage(const QString &newLanguage)
 {
     translationLoaded_ = translator_->load(":/translations/hangman_game_" + newLanguage + ".qm");
 
-    if (translationLoaded_)
+    if (translationLoaded_) {
         emit languageChanged();
+        emit alphabetChanged();
+    }
 }
 
 } // namespace hangman

@@ -14,6 +14,7 @@ class Translator : public QObject
     Q_DISABLE_COPY(Translator)
 
     Q_PROPERTY(QString language READ language NOTIFY languageChanged)
+    Q_PROPERTY(QString alphabet READ alphabet NOTIFY alphabetChanged)
 
 public:
     Translator(QObject *parent = NULL);
@@ -29,6 +30,7 @@ public:
 
 signals:
     void languageChanged();
+    void alphabetChanged();
 
 private:
     QTranslator *translator_;

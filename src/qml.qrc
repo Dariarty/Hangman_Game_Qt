@@ -3,22 +3,20 @@
         <file>qml/main/Hangman.qml</file>
         <file>qml/screens/MenuScreen.qml</file>
         <file>qml/screens/GameScreen.qml</file>
+        <file>qml/screens/CreditsScreen.qml</file>
         <file>qml/areas/OptionsArea.qml</file>
         <file>qml/areas/GameModeArea.qml</file>
+        <file>qml/areas/KeyboardArea.qml</file>
+        <file>qml/areas/DrawingArea.qml</file>
+        <file>qml/areas/TitleArea.qml</file>
         <file>qml/areas/WindowButtonsArea.qml</file>
         <file>qml/areas/WordArea.qml</file>
         <file>qml/components/MenuButton.qml</file>
         <file>qml/components/KeyboardButton.qml</file>
         <file>qml/components/WordLetter.qml</file>
-        <file>qml/keyboards/Keyboard_ru_RU.qml</file>
-        <file>qtquickcontrols2.conf</file>
         <file>qml/components/WindowButton.qml</file>
-        <file>qml/areas/KeyboardArea.qml</file>
-        <file>qml/areas/DrawingArea.qml</file>
-        <file>qml/areas/TitleArea.qml</file>
-        <file>qml/keyboards/Keyboard_en_US.qml</file>
-        <file>qml/screens/CreditsScreen.qml</file>
         <file>qml/components/MenuLabel.qml</file>
         <file>qml/components/SwitchScreenButton.qml</file>
+        <file>qtquickcontrols2.conf</file>
     </qresource>
 </RCC>

@@ -6,9 +6,6 @@ MouseArea{
 
     property string text
 
-    Layout.fillWidth: true
-    Layout.fillHeight: true
-
     state: "active"
 
     states: [

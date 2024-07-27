@@ -3,7 +3,6 @@ import QtQuick.Controls 2.12
 import QtQuick.Controls.Imagine 2.12
 
 import "../areas"
-import "../keyboards"
 import "../components"
 
 Rectangle {
@@ -24,7 +23,6 @@ Rectangle {
     //Screen Keyboard Area
     KeyboardArea{
         id: keyboardRect
-        source: "qrc:/qml/keyboards/Keyboard_" + Translator.language + ".qml"
     }
 
     //Word Area
