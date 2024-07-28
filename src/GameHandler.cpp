@@ -3,7 +3,8 @@
 namespace hangman {
 
 GameHandler::GameHandler(QSharedPointer<SoundManager> soundManager,
-                         QSharedPointer<Translator> translator, QObject *parent)
+                         QSharedPointer<Translator> translator,
+                         QObject *parent)
     : QObject(parent)
     , soundManager_(soundManager)
     , translator_(translator)

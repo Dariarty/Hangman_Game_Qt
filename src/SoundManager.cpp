@@ -17,7 +17,7 @@ SoundManager::SoundManager(QObject *parent)
 
 void SoundManager::playSound(const QString &soundName) const {
   if (!muted_)
-    effects_->value(soundName)->play();
+      effects_->value(soundName)->play();
 }
 
 void SoundManager::switchMute()

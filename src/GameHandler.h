@@ -22,17 +22,18 @@ class GameHandler : public QObject
     Q_PROPERTY(int errorsCount READ errorsCount NOTIFY errorsCountChanged)
 
 public:
-  GameHandler(QSharedPointer<SoundManager> soundManager,
-              QSharedPointer<Translator> translator, QObject *parent = NULL);
-  ~GameHandler() = default;
+    GameHandler(QSharedPointer<SoundManager> soundManager,
+                QSharedPointer<Translator> translator,
+                QObject *parent = NULL);
+    ~GameHandler() = default;
 
-  void initGameRound(QString codeword);
+    void initGameRound(QString codeword);
 
-  int errorsCount() const { return errorsCount_; }
+    int errorsCount() const { return errorsCount_; }
 
-  Q_INVOKABLE void makeGuess(const QChar &letter);
+    Q_INVOKABLE void makeGuess(const QChar &letter);
 
-  Q_INVOKABLE void abandonGame();
+    Q_INVOKABLE void abandonGame();
 
 signals:
     //Start Round
@@ -51,32 +52,32 @@ signals:
     void errorsCountChanged();
 
 private:
-  // Sound Manager
-  QSharedPointer<SoundManager> soundManager_;
+    // Sound Manager
+    QSharedPointer<SoundManager> soundManager_;
 
-  // Translator
-  QSharedPointer<Translator> translator_;
+    // Translator
+    QSharedPointer<Translator> translator_;
 
-  // CodeWord - QPair contains symbol and flag if it is guessed
-  QList<QPair<QChar, bool>> codeWord_;
+    // CodeWord - QPair contains symbol and flag if it is guessed
+    QList<QPair<QChar, bool>> codeWord_;
 
-  // number of errors made by player
-  int errorsCount_;
+    // number of errors made by player
+    int errorsCount_;
 
-  // used characters
-  QSet<QChar> usedLetters_;
+    // used characters
+    QSet<QChar> usedLetters_;
 
-  gameRoundState roundState_;
+    gameRoundState roundState_;
 
-  // Check if word is guessed
-  bool wordGuessed() const;
+    // Check if word is guessed
+    bool wordGuessed() const;
 
-  // Check if letter is in codeWord
-  bool checkLetter(const QChar &letter);
+    // Check if letter is in codeWord
+    bool checkLetter(const QChar &letter);
 
-  void processTurn(bool successfulTurn);
+    void processTurn(bool successfulTurn);
 
-  static const int maxErrors = 10;
+    static const int maxErrors = 10;
 };
 
 } // namespace hangman
