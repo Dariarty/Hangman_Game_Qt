@@ -33,7 +33,7 @@
     </message>
     <message>
         <location filename="../qml/areas/GameModeArea.qml" line="19"/>
-        <source>1500 frequent words</source>
+        <source>Frequent words</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -44,14 +44,6 @@
     <message>
         <location filename="../qml/areas/GameModeArea.qml" line="41"/>
         <source>Coming soon!</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>GameScreen</name>
-    <message>
-        <location filename="../qml/screens/GameScreen.qml" line="16"/>
-        <source>Guess a word</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

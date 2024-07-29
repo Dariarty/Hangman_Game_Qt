@@ -16,7 +16,7 @@ Rectangle {
         }
 
         MenuButton{
-            text: qsTr("1500 frequent words")
+            text: qsTr("Frequent words")
 
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width - 200 * ratio

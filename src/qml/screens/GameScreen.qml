@@ -12,7 +12,7 @@ Rectangle {
     //Title Area
     TitleArea{
         id: title
-        text: qsTr("Guess a word")
+        text: Game.hint
     }
 
     //Drawing Area

@@ -20,26 +20,28 @@ void MenuHandler::playFrequentWords()
     //Frequent Words GameMode
 
     //Get File
-    QString fileStr = ":/" + translator_->language() + "/frequent_words";
-    QFile wordsFile(fileStr);
+    QFile wordsFile(QString(":/" + translator_->language() + "/frequent_words"));
 
-    //Read Random Line in File
-    if (wordsFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        QTextStream stream(&wordsFile);
+    //Open file
+    if (!wordsFile.open(QIODevice::ReadOnly | QIODevice::Text))
+        return;
 
-        //Get random line number
-        quint32 randomLineNumber = QRandomGenerator::global()->bounded(stream.readLine().toInt());
+    //Create stream
+    QTextStream stream(&wordsFile);
 
-        QString word;
+    //Get random word frome a file and hint
+    QString word, hint = stream.readLine();
 
-        //Get Line in file by number
-        for (quint32 i = 0; i <= randomLineNumber; i++) {
-            word = stream.readLine();
-        }
+    //Get random line number
+    quint32 randomLineNumber = QRandomGenerator::global()->bounded(stream.readLine().toInt());
 
-        //Init Game Round
-        game_->initGameRound(word);
+    //Get Line in file by number
+    for (quint32 i = 0; i <= randomLineNumber; i++) {
+        word = stream.readLine();
     }
+
+    //Init Game Round
+    game_->initGameRound(word, hint);
 }
 
 void MenuHandler::playAgain()
