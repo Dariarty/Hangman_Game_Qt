@@ -8,23 +8,48 @@ Rectangle {
     color: "transparent"
 
     Column{
+        id: contentColumn
         anchors.fill: parent
-        spacing: 30 * ratio
+        spacing: 20 * ratio
 
         MenuLabel{
             text: qsTr("Play")
         }
 
-        MenuButton{
-            text: qsTr("Frequent words")
+        Row{
 
             anchors.horizontalCenter: parent.horizontalCenter
-            width: parent.width - 200 * ratio
-            height: 100 * ratio
+            width: parent.width - 100 * ratio
 
-            onClicked: {
-                GameMenu.playFrequentWords()
+            spacing: 20 * ratio
+
+            MenuButton{
+                text: qsTr("Frequent words")
+
+                width: (parent.width - parent.spacing) / 2
+                height: 100 * ratio
+
+                onClicked: {
+                    GameMenu.playFrequentWords()
+                }
             }
+
+            MenuButton{
+                text: qsTr("All topics")
+
+                width: (parent.width - parent.spacing) / 2
+                height: 100 * ratio
+            }
+
+        }
+
+        MenuButton{
+            text: qsTr("Random topic")
+
+            anchors.horizontalCenter: parent.horizontalCenter
+
+            width: (parent.width - parent.spacing) / 2
+            height: 100 * ratio
         }
 
         Rectangle{
@@ -34,12 +59,12 @@ Rectangle {
         }
 
         MenuLabel{
+            id: wordsByTopicLabel
             text: qsTr("Words by topic")
         }
+    }
 
-        MenuLabel{
-            text: qsTr("Coming soon!")
-        }
-
+    PlaceholderTopics{
+        id: placeholderTopics
     }
 }

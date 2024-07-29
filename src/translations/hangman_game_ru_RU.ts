@@ -27,24 +27,37 @@
 <context>
     <name>GameModeArea</name>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="15"/>
+        <location filename="../qml/areas/GameModeArea.qml" line="16"/>
         <source>Play</source>
         <translation>Играть</translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="19"/>
+        <location filename="../qml/areas/GameModeArea.qml" line="27"/>
         <source>Frequent words</source>
         <translation>Частые слова</translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="37"/>
+        <location filename="../qml/areas/GameModeArea.qml" line="39"/>
+        <source>All topics</source>
+        <translation>Все темы</translation>
+    </message>
+    <message>
+        <location filename="../qml/areas/GameModeArea.qml" line="48"/>
+        <source>Random topic</source>
+        <translation type="unfinished">Случайная тема</translation>
+    </message>
+    <message>
+        <source>Random theme</source>
+        <translation type="vanished">Случайная тема</translation>
+    </message>
+    <message>
+        <location filename="../qml/areas/GameModeArea.qml" line="64"/>
         <source>Words by topic</source>
         <translation>Слова по темам</translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="41"/>
         <source>Coming soon!</source>
-        <translation>В разработке!</translation>
+        <translation type="vanished">В разработке!</translation>
     </message>
 </context>
 <context>

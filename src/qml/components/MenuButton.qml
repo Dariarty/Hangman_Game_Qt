@@ -17,8 +17,11 @@ Button{
     }
 
     contentItem: Text{
+
         id: contentText
 
+        anchors.fill: parent
+        anchors.margins: 6
         font: button.font
         text: button.text
         horizontalAlignment: Text.AlignHCenter

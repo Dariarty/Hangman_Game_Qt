@@ -26,7 +26,7 @@ Rectangle {
             margins: 50 * ratio
         }
 
-        width: menuRoot.width / 2 -  ( anchors.margins * 2 )
+        width: menuRoot.width * 0.35 -  ( anchors.margins * 2 )
     }
 
     //RightArea
@@ -40,7 +40,7 @@ Rectangle {
             margins: 50 * ratio
         }
 
-        width: menuRoot.width / 2 -  ( anchors.margins * 2 )
+        width: menuRoot.width * 0.65 -  ( anchors.margins * 2 )
     }
 
     //Dividing Line
@@ -49,7 +49,9 @@ Rectangle {
         anchors{
             top: optionsRect.top
             bottom: optionsRect.bottom
-            horizontalCenter: menuRoot.horizontalCenter
+            left: optionsRect.right
+            leftMargin: 50 * ratio
+
         }
 
         color: standartColor

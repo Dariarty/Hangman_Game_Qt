@@ -27,23 +27,28 @@
 <context>
     <name>GameModeArea</name>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="15"/>
+        <location filename="../qml/areas/GameModeArea.qml" line="16"/>
         <source>Play</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="19"/>
+        <location filename="../qml/areas/GameModeArea.qml" line="27"/>
         <source>Frequent words</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="37"/>
-        <source>Words by topic</source>
+        <location filename="../qml/areas/GameModeArea.qml" line="39"/>
+        <source>All topics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="41"/>
-        <source>Coming soon!</source>
+        <location filename="../qml/areas/GameModeArea.qml" line="48"/>
+        <source>Random topic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/areas/GameModeArea.qml" line="64"/>
+        <source>Words by topic</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
