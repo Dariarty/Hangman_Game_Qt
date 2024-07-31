@@ -18,6 +18,5 @@
         <file>qml/components/MenuLabel.qml</file>
         <file>qml/components/SwitchScreenButton.qml</file>
         <file>qtquickcontrols2.conf</file>
-        <file>qml/areas/PlaceholderTopics.qml</file>
     </qresource>
 </RCC>
