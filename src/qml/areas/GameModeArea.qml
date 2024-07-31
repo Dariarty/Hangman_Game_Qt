@@ -121,26 +121,7 @@ Rectangle {
 
         //PLACEHOLDER
         Component.onCompleted: {
-            topicsModel.append({topic: "Topic 1"})
-            topicsModel.append({topic: "Topic 2"})
-            topicsModel.append({topic: "Topic 3"})
-            topicsModel.append({topic: "Topic 4"})
-            topicsModel.append({topic: "Topic 5"})
-            topicsModel.append({topic: "Topic 6"})
-            topicsModel.append({topic: "Topic 7"})
-            topicsModel.append({topic: "Topic 8"})
-            topicsModel.append({topic: "Topic 9"})
-            topicsModel.append({topic: "Topic 10"})
-            topicsModel.append({topic: "Topic 11"})
-            topicsModel.append({topic: "Topic 12"})
-            topicsModel.append({topic: "Topic 13"})
-            topicsModel.append({topic: "Topic 14"})
-            topicsModel.append({topic: "Topic 15"})
-            topicsModel.append({topic: "Topic 16"})
-            topicsModel.append({topic: "Topic 17"})
-            topicsModel.append({topic: "Topic 18"})
-            topicsModel.append({topic: "Topic 19"})
-            topicsModel.append({topic: "Topic 20"})
+            topicsModel.append({topic: "Placeholder topic"})
         }
     }
 }
