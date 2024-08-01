@@ -20,6 +20,9 @@ void Translator::initTranslation()
 
     if (translationLoaded_)
         QGuiApplication::instance()->installTranslator(translator_);
+
+    emit languageChanged();
+    emit alphabetChanged();
 }
 
 QString Translator::language() const

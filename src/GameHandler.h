@@ -20,6 +20,7 @@ class GameHandler : public QObject
     Q_DISABLE_COPY(GameHandler)
 
     Q_PROPERTY(int errorsCount READ errorsCount NOTIFY errorsCountChanged)
+    Q_PROPERTY(QString hint READ hint NOTIFY hintChanged)
 
 public:
     GameHandler(QSharedPointer<SoundManager> soundManager,
@@ -27,9 +28,11 @@ public:
                 QObject *parent = NULL);
     ~GameHandler() = default;
 
-    void initGameRound(QString codeword);
+    void initGameRound(const QString &word, const QString &hint);
 
     int errorsCount() const { return errorsCount_; }
+
+    QString hint() const { return hint_; }
 
     Q_INVOKABLE void makeGuess(const QChar &letter);
 
@@ -51,6 +54,12 @@ signals:
     //Update Image
     void errorsCountChanged();
 
+    //Update hint
+    void hintChanged();
+
+    //session ended
+    void sessionEnded();
+
 private:
     // Sound Manager
     QSharedPointer<SoundManager> soundManager_;
@@ -60,6 +69,9 @@ private:
 
     // CodeWord - QPair contains symbol and flag if it is guessed
     QList<QPair<QChar, bool>> codeWord_;
+
+    //Hint for a player
+    QString hint_;
 
     // number of errors made by player
     int errorsCount_;

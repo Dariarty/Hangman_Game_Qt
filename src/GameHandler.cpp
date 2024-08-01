@@ -12,7 +12,7 @@ GameHandler::GameHandler(QSharedPointer<SoundManager> soundManager,
     , roundState_(gameRoundState::none)
 {}
 
-void GameHandler::initGameRound(QString word)
+void GameHandler::initGameRound(const QString &word, const QString &hint)
 {
     //Clear game variables
     codeWord_.clear();
@@ -20,6 +20,10 @@ void GameHandler::initGameRound(QString word)
 
     errorsCount_ = 0;
     emit errorsCountChanged();
+
+    //Write and update hint
+    hint_ = hint;
+    emit hintChanged();
 
     //Write codeword
     for (int i = 0; i < word.length(); i++) {
@@ -64,11 +68,14 @@ void GameHandler::abandonGame()
     //Clear game variables
     codeWord_.clear();
     usedLetters_.clear();
+    hint_.clear();
 
     errorsCount_ = 0;
     emit errorsCountChanged();
 
     roundState_ = gameRoundState::none;
+
+    emit sessionEnded();
 }
 
 //private

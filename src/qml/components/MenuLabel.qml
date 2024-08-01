@@ -17,7 +17,7 @@ Rectangle{
         text: rootRect.text
         anchors.fill: parent
         color: labelColor
-        font.pointSize: 255
+        font.pointSize: 200
         horizontalAlignment: Qt.AlignHCenter
         font.family: standartFont
     }

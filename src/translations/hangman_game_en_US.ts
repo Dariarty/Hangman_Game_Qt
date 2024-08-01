@@ -27,31 +27,33 @@
 <context>
     <name>GameModeArea</name>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="15"/>
+        <location filename="../qml/areas/GameModeArea.qml" line="18"/>
         <source>Play</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="19"/>
-        <source>1500 frequent words</source>
+        <location filename="../qml/areas/GameModeArea.qml" line="29"/>
+        <source>Frequent words</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="37"/>
+        <location filename="../qml/areas/GameModeArea.qml" line="38"/>
+        <source>All topics</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/areas/GameModeArea.qml" line="49"/>
+        <source>Random topic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/areas/GameModeArea.qml" line="67"/>
         <source>Words by topic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="41"/>
-        <source>Coming soon!</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>GameScreen</name>
-    <message>
-        <location filename="../qml/screens/GameScreen.qml" line="16"/>
-        <source>Guess a word</source>
+        <location filename="../qml/areas/GameModeArea.qml" line="153"/>
+        <source>Topics are playable but not populated with much words. For balanced gameplay play frequent words</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

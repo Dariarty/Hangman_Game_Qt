@@ -19,7 +19,7 @@ Rectangle{
         text: titleArea.text
         anchors.fill: parent
         color: standartColor
-        font.pointSize: 255
+        font.pointSize: 200
         horizontalAlignment: Qt.AlignHCenter
         font.family: standartFont
         anchors.bottomMargin: 5

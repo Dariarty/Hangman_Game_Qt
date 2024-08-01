@@ -1,0 +1,7 @@
+Cities
+5
+Moscow
+Los-Angeles
+New-York
+London
+Paris
