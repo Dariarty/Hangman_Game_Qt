@@ -74,6 +74,8 @@ void GameHandler::abandonGame()
     emit errorsCountChanged();
 
     roundState_ = gameRoundState::none;
+
+    emit sessionEnded();
 }
 
 //private

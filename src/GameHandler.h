@@ -57,6 +57,9 @@ signals:
     //Update hint
     void hintChanged();
 
+    //session ended
+    void sessionEnded();
+
 private:
     // Sound Manager
     QSharedPointer<SoundManager> soundManager_;

@@ -75,8 +75,8 @@ Rectangle {
             topicsModel.clear()
         }
 
-        function onAddTopic(topicName){
-            topicsModel.append({ topic: topicName})
+        function onAddTopic(fileName, topicName){
+            topicsModel.append({ file: fileName, topic: topicName})
         }
     }
 
@@ -114,7 +114,7 @@ Rectangle {
             width: topicsGridView.cellWidth - 10 * ratio
             height: 80 * ratio
             text: topic
-            onClicked: GameMenu.playTopic(topic)
+            onClicked: GameMenu.playTopic(file)
         }
 
         ScrollBar.vertical: ScrollBar{
