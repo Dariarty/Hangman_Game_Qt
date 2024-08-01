@@ -1,0 +1,6 @@
+Clothes
+4
+skirt
+jacket
+shirt
+pants

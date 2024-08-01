@@ -1,6 +1,11 @@
 <RCC>
     <qresource prefix="/en_US">
         <file alias="frequent_words">resources/words/en_US/frequent_words.txt</file>
+        <file alias="topics/body">resources/words/en_US/topics/body.txt</file>
+        <file alias="topics/cities">resources/words/en_US/topics/cities.txt</file>
+        <file alias="topics/animals">resources/words/en_US/topics/animals.txt</file>
+        <file alias="topics/countries">resources/words/en_US/topics/countries.txt</file>
+        <file alias="topics/clothes">resources/words/en_US/topics/clothes.txt</file>
     </qresource>
     <qresource prefix="/ru_RU">
         <file alias="frequent_words">resources/words/ru_RU/frequent_words.txt</file>

@@ -1,0 +1,8 @@
+Countries
+6
+France
+Russia
+Germany
+Canada
+China
+Japan

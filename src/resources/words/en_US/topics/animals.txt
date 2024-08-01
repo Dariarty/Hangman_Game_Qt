@@ -1,0 +1,7 @@
+Animals
+5
+cat
+dog
+parrot
+bear
+wolf
