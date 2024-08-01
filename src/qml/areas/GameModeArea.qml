@@ -31,9 +31,7 @@ Rectangle {
                 width: (parent.width - parent.spacing) / 2
                 height: 100 * ratio
 
-                onClicked: {
-                    GameMenu.playFrequentWords()
-                }
+                onClicked: GameMenu.playFrequentWords()
             }
 
             MenuButton{
@@ -41,6 +39,8 @@ Rectangle {
 
                 width: (parent.width - parent.spacing) / 2
                 height: 100 * ratio
+
+                onClicked: GameMenu.playShuffledTopics()
             }
 
         }
@@ -52,6 +52,8 @@ Rectangle {
 
             width: (parent.width - parent.spacing) / 2
             height: 100 * ratio
+
+            onClicked: GameMenu.playRandomTopic()
         }
 
         Rectangle{
@@ -66,8 +68,21 @@ Rectangle {
         }
     }
 
+    Connections{
+        target: GameMenu
+
+        function onClearTopics(){
+            topicsModel.clear()
+        }
+
+        function onAddTopic(topicName){
+            topicsModel.append({ topic: topicName})
+        }
+    }
+
     ListModel{
         id: topicsModel
+        Component.onCompleted: GameMenu.getTopicList()
     }
 
     GridView{
@@ -99,6 +114,7 @@ Rectangle {
             width: topicsGridView.cellWidth - 10 * ratio
             height: 80 * ratio
             text: topic
+            onClicked: GameMenu.playTopic(topic)
         }
 
         ScrollBar.vertical: ScrollBar{
@@ -119,9 +135,6 @@ Rectangle {
 
         }
 
-        //PLACEHOLDER
-        Component.onCompleted: {
-            topicsModel.append({topic: "Placeholder topic"})
-        }
     }
+
 }

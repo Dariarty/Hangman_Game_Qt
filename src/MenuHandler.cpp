@@ -13,11 +13,16 @@ MenuHandler::MenuHandler(QSharedPointer<Translator> translator,
     : QObject(parent)
     , translator_(translator)
     , game_(gameHandler)
-{}
+    , mode_(GameMode::None)
+    , currentTopic_("")
+{
+    connect(translator_.data(), &Translator::languageChanged, this, &MenuHandler::getTopicList);
+}
 
 void MenuHandler::playFrequentWords()
 {
     //Frequent Words GameMode
+    mode_ = GameMode::FrequentWords;
 
     //Get File
     QFile wordsFile(QString(":/" + translator_->language() + "/frequent_words"));
@@ -44,9 +49,45 @@ void MenuHandler::playFrequentWords()
     game_->initGameRound(word, hint);
 }
 
+void MenuHandler::playShuffledTopics()
+{
+    qDebug() << "Shuffled topics";
+}
+void MenuHandler::playRandomTopic()
+{
+    qDebug() << "Random topic";
+}
+void MenuHandler::playTopic(const QString &topicName)
+{
+    qDebug() << "Topic:" << topicName;
+}
+
 void MenuHandler::playAgain()
 {
-    playFrequentWords();
+    switch (mode_) {
+    case FrequentWords:
+        playFrequentWords();
+        break;
+    case ShuffleTopics:
+        playShuffledTopics();
+        break;
+    case ChosenTopic:
+        playTopic(currentTopic_);
+        break;
+    default:
+        break;
+    }
+}
+
+//private slots
+void MenuHandler::getTopicList()
+{
+    qDebug() << "Get topic list called";
+
+    emit clearTopics();
+
+    emit addTopic("Test1");
+    emit addTopic("Test2");
 }
 
 } // namespace hangman
