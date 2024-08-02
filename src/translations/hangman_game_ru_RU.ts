@@ -47,22 +47,9 @@
         <translation>Случайная тема</translation>
     </message>
     <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="153"/>
-        <source>Topics are playable but not populated with much words. For balanced gameplay play frequent words</source>
-        <translation>Темы играбельны, но слов в них мало. Для сбалансированного геймплея доступен режим &quot;Частые слова&quot;</translation>
-    </message>
-    <message>
-        <source>Random theme</source>
-        <translation type="vanished">Случайная тема</translation>
-    </message>
-    <message>
         <location filename="../qml/areas/GameModeArea.qml" line="67"/>
         <source>Words by topic</source>
         <translation>Слова по темам</translation>
-    </message>
-    <message>
-        <source>Coming soon!</source>
-        <translation type="vanished">В разработке!</translation>
     </message>
 </context>
 <context>

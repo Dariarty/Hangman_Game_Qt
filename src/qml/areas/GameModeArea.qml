@@ -137,22 +137,4 @@ Rectangle {
 
     }
 
-    //PLACEHOLDER MESSAGE
-    Rectangle{
-        anchors.bottom: topicsGridView.bottom
-        width: topicsGridView.width
-        height: 100
-        color: "transparent"
-        Text{
-            color: standartColor
-            font.pointSize: 200
-            fontSizeMode: Text.Fit
-            font.family: standartFont
-            anchors.fill: parent
-            wrapMode: Text.WordWrap
-            text: qsTr("Topics are playable but not populated with much words. For balanced gameplay play frequent words")
-            verticalAlignment: Qt.AlignBottom
-        }
-    }
-
 }

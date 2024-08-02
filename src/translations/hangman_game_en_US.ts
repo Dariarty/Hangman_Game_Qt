@@ -51,11 +51,6 @@
         <source>Words by topic</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="../qml/areas/GameModeArea.qml" line="153"/>
-        <source>Topics are playable but not populated with much words. For balanced gameplay play frequent words</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>MenuScreen</name>
