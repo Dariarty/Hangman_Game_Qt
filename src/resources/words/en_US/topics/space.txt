@@ -1,0 +1,56 @@
+Space
+54
+planet
+star
+galaxy
+comet
+asteroid
+meteor
+meteorite
+black hole
+supernova
+nebula
+quasar
+pulsar
+cosmos
+universe
+constellation
+orbit
+eclipse
+solar system
+Milky Way
+gravity
+spacecraft
+satellite
+telescope
+astronaut
+spacesuit
+launchpad
+rocket
+shuttle
+space station
+rover
+thruster
+observatory
+exoplanet
+dark matter
+dark energy
+red giant
+white dwarf
+neutron star
+event horizon
+singularity
+light year
+parsec
+interstellar
+alien
+Mercury
+Venus
+Earth
+Mars
+Jupiter
+Saturn
+Uranus
+Neptune
+Pluto
+Sun

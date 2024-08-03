@@ -1,7 +1,88 @@
 Cities
-5
+86
 Moscow
-Los-Angeles
-New-York
+Saint-Petersburg
+Kaluga
+New York
 London
 Paris
+Tokyo
+Beijing
+Shanghai
+Mumbai
+Delhi
+Singapore
+Hong Kong
+Berlin
+Rome
+Milan
+Madrid
+Barcelona
+Lisbon
+Athens
+Istanbul
+Cairo
+Tehran
+Bahrain
+Dubai
+Mexico City
+Los Angeles
+Chicago
+San Francisco
+Washington
+Ottawa
+Toronto
+Vancouver
+Sydney
+Melbourne
+Brisbane
+Adelaide
+Wellington
+Auckland
+Seoul
+Busan
+Fukuoka
+Osaka
+Yokohama
+Nagoya
+Bangkok
+Hanoi
+Helsinki
+Stockholm
+Oslo
+Copenhagen
+Amsterdam
+Brussels
+Vienna
+Budapest
+Prague
+Warsaw
+Bucharest
+Riga
+Vilnius
+Minsk
+Kyiv
+Bratislava
+Marcel
+Lyon
+Cape Town
+Rio de Janeiro
+Buenos Aires
+Dublin
+Edinburgh
+Munich
+Hamburg
+Frankfurt
+Zurich
+Geneva
+Luxembourg
+Tallinn
+Belgrade
+Toulouse
+Nice
+Florence
+Naples
+Rotterdam
+Manchester
+Pyongyang
+Liverpool
