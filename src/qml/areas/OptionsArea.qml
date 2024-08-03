@@ -16,6 +16,14 @@ Rectangle {
         }
 
         MenuButton{
+            text: "English"
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width - 40 * ratio
+            height: 100 * ratio
+            onClicked: Translator.setLanguage("en_US")
+        }
+
+        MenuButton{
             text: "Русский"
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width - 40 * ratio
@@ -23,12 +31,5 @@ Rectangle {
             onClicked: Translator.setLanguage("ru_RU")
         }
 
-        MenuButton{
-            text: "English"
-            anchors.horizontalCenter: parent.horizontalCenter
-            width: parent.width - 40 * ratio
-            height: 100 * ratio
-            onClicked: Translator.setLanguage("en_US")
-        }
     }
 }

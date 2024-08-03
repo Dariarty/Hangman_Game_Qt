@@ -6,6 +6,16 @@
         <file alias="topics/animals">resources/words/en_US/topics/animals.txt</file>
         <file alias="topics/countries">resources/words/en_US/topics/countries.txt</file>
         <file alias="topics/clothes">resources/words/en_US/topics/clothes.txt</file>
+        <file alias="topics/jobs">resources/words/en_US/topics/jobs.txt</file>
+        <file alias="topics/emotions">resources/words/en_US/topics/emotions.txt</file>
+        <file alias="topics/colors">resources/words/en_US/topics/colors.txt</file>
+        <file alias="topics/it">resources/words/en_US/topics/it.txt</file>
+        <file alias="topics/medicine">resources/words/en_US/topics/medicine.txt</file>
+        <file alias="topics/food">resources/words/en_US/topics/food.txt</file>
+        <file alias="topics/sport">resources/words/en_US/topics/sport.txt</file>
+        <file alias="topics/space">resources/words/en_US/topics/space.txt</file>
+        <file alias="topics/music">resources/words/en_US/topics/music.txt</file>
+        <file alias="topics/literature">resources/words/en_US/topics/literature.txt</file>
     </qresource>
     <qresource prefix="/ru_RU">
         <file alias="frequent_words">resources/words/ru_RU/frequent_words.txt</file>
@@ -15,6 +25,14 @@
         <file alias="topics/clothes">resources/words/ru_RU/topics/clothes.txt</file>
         <file alias="topics/food">resources/words/ru_RU/topics/food.txt</file>
         <file alias="topics/sport">resources/words/ru_RU/topics/sport.txt</file>
-        <file alias="topics/technology">resources/words/ru_RU/topics/technology.txt</file>
+        <file alias="topics/computer">resources/words/ru_RU/topics/computer.txt</file>
+        <file alias="topics/medicine">resources/words/ru_RU/topics/medicine.txt</file>
+        <file alias="topics/body">resources/words/ru_RU/topics/body.txt</file>
+        <file alias="topics/plants">resources/words/ru_RU/topics/plants.txt</file>
+        <file alias="topics/jobs">resources/words/ru_RU/topics/jobs.txt</file>
+        <file alias="topics/space">resources/words/ru_RU/topics/space.txt</file>
+        <file alias="topics/geography">resources/words/ru_RU/topics/geography.txt</file>
+        <file alias="topics/literature">resources/words/ru_RU/topics/literature.txt</file>
+        <file alias="topics/house">resources/words/ru_RU/topics/house.txt</file>
     </qresource>
 </RCC>

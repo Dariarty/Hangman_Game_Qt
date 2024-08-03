@@ -1,0 +1,66 @@
+IT & Tech
+64
+computer
+laptop
+tablet
+smartphone
+smartwatch
+server
+router
+modem
+printer
+scanner
+monitor
+keyboard
+mouse
+trackpad
+webcam
+headphones
+earbuds
+microphone
+hard drive
+flash drive
+memory card
+motherboard
+firewall
+ethernet
+charger
+battery
+projector
+operating system
+application
+antivirus
+encryption
+database
+network
+internet
+Wi-Fi
+Bluetooth
+blockchain
+cybersecurity
+analytics
+algorithm
+code
+programming
+virtualization
+containerization
+repository
+malware
+phishing
+ransomware
+spyware
+adware
+trojan
+backup
+cryptography
+biometrics
+compiler
+interpreter
+debugger
+script
+framework
+frontend
+backend
+decryption
+hashing
+token

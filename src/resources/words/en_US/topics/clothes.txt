@@ -1,6 +1,94 @@
 Clothes
-4
-skirt
-jacket
+92
+attire
+apron
+balaclava
+bandanna
+baseball cap
+beanie
+belt
+bloomers
+bonnet
+bow tie
+bra
+breeches
+button
+ball gown
+bathing suit
+bedclothes
+beret
+bikini
+blouse
+boot
 shirt
 pants
+jeans
+shorts
+skirt
+dress
+jacket
+coat
+T-shirt
+sweater
+hoodie
+cardigan
+suit
+tie
+scarf
+hat
+cap
+gloves
+mittens
+socks
+stockings
+tights
+underwear
+boxers
+briefs
+panties
+camisole
+tank top
+vest
+waistcoat
+blazer
+overalls
+jumpsuit
+raincoat
+windbreaker
+trench coat
+poncho
+shawl
+sarong
+robe
+pajamas
+nightgown
+swimsuit
+trunks
+board shorts
+flip-flops
+sandals
+sneakers
+boots
+high heels
+flats
+loafers
+clogs
+slippers
+slacks
+leggings
+sweatpants
+tracksuit
+sports bra
+leotard
+tunic
+kimono
+uniform
+cape
+corset
+negligee
+bomber jacket
+anorak
+gaiters
+moccasins
+espadrilles
+waders
