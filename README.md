@@ -9,12 +9,13 @@ Hangman is a word guessing game. Program randomly chooses a word and the player 
 
 ## Features
 
-* Words to guess are chosen randomly from a file.</br>
+* Lots of gamemodes for words on different themes and topics.</br>
+* More than 2500 English and 2000 Russian words.</br>
+* Words to guess are chosen randomly from files. Topics can also be shuffled and chosen randomly.</br>
+* Sound effects when interacting with game's GUI.</br>
+* Fullscreen and Windowed modes, app is responsive to different window sizes.</br>
 * Application supports dynamic translations.</br>
 * Currently, the game is available in English and Russian.</br>
-* More than 1500 English words and 1000 Russian words.</br>
-* Fullscreen and Windowed modes, app is responsive to different window sizes.</br>
-* Sound effects when interacting with game's GUI.</br>
 
 ## Screenshots
 
