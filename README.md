@@ -24,6 +24,10 @@ Hangman is a word guessing game. Program randomly chooses a word and the player 
 
 ![alt text](assets/en_US/gameplay.jpg)
 
+<h3 align="center">Main Menu of the application</h3>
+
+![alt text](assets/en_US/menu.jpg)
+
 <h3 align="center">Player has successfully guessed a word</h3>
 
 ![alt text](assets/en_US/victory.jpg)
@@ -32,9 +36,6 @@ Hangman is a word guessing game. Program randomly chooses a word and the player 
 
 ![alt text](assets/en_US/defeat.jpg)
 
-<h3 align="center">Main Menu of the application</h3>
-
-![alt text](assets/en_US/menu.jpg)
 
 ## Building Source Code
 Building both for Windows and Linux is supported. </br>
