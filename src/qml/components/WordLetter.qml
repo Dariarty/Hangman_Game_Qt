@@ -11,7 +11,7 @@ Rectangle{
 
     color: "transparent"
 
-    width: height * rootWordArea.widthToHeightMultiplier
+    width: height / rootWordArea.letterAspectRatio
 
     Label{
         id: letter
