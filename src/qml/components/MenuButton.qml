@@ -21,7 +21,7 @@ Button{
         id: contentText
 
         anchors.fill: parent
-        anchors.margins: 6
+        anchors.margins: 10 * ratio
         font: button.font
         text: button.text
         horizontalAlignment: Text.AlignHCenter
