@@ -9,10 +9,10 @@ Rectangle {
     id: rootWordArea
     width: parent.width * 0.6 - anchors.leftMargin - anchors.rightMargin
 
-    readonly property double widthToHeightMultiplier: 0.64
+    readonly property double letterAspectRatio: 1.5625
 
     readonly property double symbolHeight:
-        Math.min((rootWordArea.width / wordModel.count) * 0.8 * ( 1 / widthToHeightMultiplier),
+        Math.min((rootWordArea.width / wordModel.count) * 0.8 * letterAspectRatio,
                  250 * ratio)
 
     Connections{
@@ -69,7 +69,7 @@ Rectangle {
 
         Rectangle{
             id: wordRect
-            width: ((symbolHeight * widthToHeightMultiplier) + wordView.spacing ) * wordModel.count
+            width: ((symbolHeight / letterAspectRatio) + wordView.spacing ) * wordModel.count
             height: symbolHeight
             anchors.horizontalCenter: parent.horizontalCenter
 
@@ -113,6 +113,7 @@ Rectangle {
 
                 fontSizeMode: Text.Fit
                 anchors.fill: parent
+                anchors.bottomMargin: 10 * ratio
                 font.pointSize: 200
                 horizontalAlignment: Qt.AlignHCenter
                 font.family: standartFont
