@@ -13,7 +13,7 @@ Rectangle {
 
     readonly property double symbolHeight:
         Math.min((rootWordArea.width / wordModel.count) * 0.8 * ( 1 / widthToHeightMultiplier),
-                 wordRect.height)
+                 250 * ratio)
 
     Connections{
         target: Game
@@ -60,26 +60,27 @@ Rectangle {
 
     color: "transparent"
 
-    ColumnLayout {
+    Column {
         id: wordColumn
 
-        anchors.fill: parent
-
+        width: parent.width
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
 
         Rectangle{
             id: wordRect
-            Layout.preferredWidth: ((symbolHeight * widthToHeightMultiplier) + wordView.spacing ) * wordModel.count
-            Layout.preferredHeight: 250 * ratio
-            Layout.alignment: Qt.AlignHCenter
+            width: ((symbolHeight * widthToHeightMultiplier) + wordView.spacing ) * wordModel.count
+            height: symbolHeight
+            anchors.horizontalCenter: parent.horizontalCenter
 
             color: "transparent"
 
             ListView{
                 id: wordView
 
-                anchors.fill: parent
+                anchors.bottom: parent.bottom
+                width: parent.width
+                height: symbolHeight
 
                 orientation: ListView.Horizontal
                 interactive: false
@@ -100,8 +101,10 @@ Rectangle {
 
         Rectangle{
             id:gameEndMessageRect
-            Layout.preferredHeight: 150 * ratio
-            Layout.preferredWidth: wordColumn.width
+            height: Math.min(rootWordArea.height - wordRect.height - gameEndButtonsRect.height,
+                             150 * ratio)
+            width: wordColumn.width
+            anchors.horizontalCenter: parent.horizontalCenter
 
             color: "transparent"
 
@@ -119,8 +122,9 @@ Rectangle {
 
         Rectangle{
             id: gameEndButtonsRect
-            Layout.preferredHeight: 100 * ratio
-            Layout.preferredWidth: parent.width
+            height: 100 * ratio
+            width: parent.width
+            anchors.horizontalCenter: parent.horizontalCenter
             color: "transparent"
 
             MenuButton{
