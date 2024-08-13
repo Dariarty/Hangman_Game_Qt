@@ -42,7 +42,7 @@ Building both for Windows and Linux is supported. </br>
 App can also be built with Qt for WebAssembly. </br>
 Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building the app is Qt 6.7.2 </br>
 1.  Download and install Qt5.10+/Qt6, Qt Creator and MinGW compiler.</br>
-2.  Configure Qt Creator Kit for Desktop. </br>
+2.  Configure Qt Creator Kit for Desktop or Qt for WebAssembly Kit. </br>
 3.  Clone the repo.
      ```sh
      git clone https://github.com/Dariarty/Hangman_Game_Qt.git
