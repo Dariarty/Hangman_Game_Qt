@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/Dariarty/Hangman_Game_Qt/blob/main/README.md)
 [![ru](https://img.shields.io/badge/lang-ru-red.svg)](https://github.com/Dariarty/Hangman_Game_Qt/blob/main/README.ru.md)
 
-Hangman game made with C++/Qt/QML. </br> 
+Cross-platform Hangman game made with C++/Qt/QML. </br> 
 
 Hangman is a word guessing game. Program randomly chooses a word and the player tries to guess it by suggesting letters. With each incorrect guess, a line is added to hangman drawing. If the picture is complete, player loses. To win, player has to correctly guess all letters in a word.
 
