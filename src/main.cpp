@@ -9,6 +9,8 @@ int main(int argc, char *argv[])
 {
     int exitCode = -111;
 
+    QCoreApplication::setApplicationName("Hangman");
+
     QGuiApplication app(argc, argv);
 
     hangman::UiManager uiManager;
