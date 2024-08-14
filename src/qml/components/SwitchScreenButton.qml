@@ -14,7 +14,7 @@ MouseArea{
         bottomMargin: 30 * ratio
     }
 
-    hoverEnabled: true
+    hoverEnabled: !UiManager.isAndroidDevice
 
     height: 100 * ratio
     width: 100 * ratio

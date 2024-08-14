@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/Dariarty/Hangman_Game_Qt/blob/main/README.md)
 [![ru](https://img.shields.io/badge/lang-ru-red.svg)](https://github.com/Dariarty/Hangman_Game_Qt/blob/main/README.ru.md)
 
-Cross-platform Hangman game made with C++/Qt/QML. </br> 
+Cross-platform Hangman game made with C++/Qt/QML for Windows, Linux, Android and WebAssembly. </br> 
 
 Hangman is a word guessing game. Program randomly chooses a word and the player tries to guess it by suggesting letters. With each incorrect guess, a line is added to hangman drawing. If the picture is complete, player loses. To win, player has to correctly guess all letters in a word.
 
@@ -38,7 +38,7 @@ Hangman is a word guessing game. Program randomly chooses a word and the player 
 
 
 ## Building Source Code
-App currently supports building for Windows, Linux and WebAssembly (using Qt for WebAssembly). </br>
+App supports building for Windows, Linux, Android and WebAssembly (using Qt for WebAssembly). </br>
 Minimal supported Qt version is Qt 5.10. Maximum tested Qt version for building the app is Qt 6.7.2 </br>
 1.  Download and install Qt5.10+/Qt6, Qt Creator and MinGW compiler.</br>
 2.  Configure Qt Creator Kit for Desktop or target device. </br>

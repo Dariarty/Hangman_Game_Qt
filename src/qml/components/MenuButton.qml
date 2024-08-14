@@ -8,7 +8,7 @@ Button{
     font.family: standartFont
     font.pointSize: 80
 
-    hoverEnabled: true
+    hoverEnabled: !UiManager.isAndroidDevice
 
     background: Rectangle {
         color: button.down ? downColor :

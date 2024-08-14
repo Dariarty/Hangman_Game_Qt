@@ -52,6 +52,10 @@ void UiManager::loadUi()
     //Set Source QML File
     view_->setSource(QUrl(kMainQmlName));
 
+    //For Android, first show app not in fullscren
+    if (isAndroidDevice())
+        view_->show();
+
     //Show App in FullScreen
     toggleFullScreen();
 }
@@ -59,6 +63,15 @@ void UiManager::loadUi()
 bool UiManager::isFullScreen() const
 {
     return (view_->windowState() == Qt::WindowState::WindowFullScreen);
+}
+
+bool UiManager::isAndroidDevice() const
+{
+#ifdef Q_OS_ANDROID
+    return true;
+#else
+    return false;
+#endif
 }
 
 void UiManager::fullScreenButtonPressed()

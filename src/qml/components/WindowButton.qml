@@ -7,7 +7,7 @@ MouseArea {
 
     property string source
 
-    hoverEnabled: visible
+    hoverEnabled: visible && !UiManager.isAndroidDevice
 
     height: 60 * ratio
     width: 60 * ratio
