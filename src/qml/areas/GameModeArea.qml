@@ -122,7 +122,7 @@ Rectangle {
 
             policy: topicsGridView.contentHeight > topicsGridView.height ?
                         ScrollBar.AlwaysOn : ScrollBar.AlwaysOff
-            hoverEnabled: visible
+            hoverEnabled: visible && !UiManager.isAndroidDevice
 
             contentItem: Rectangle{
                 id: scrollBarContentRect

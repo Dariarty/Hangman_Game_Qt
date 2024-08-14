@@ -12,7 +12,7 @@ MouseArea{
         State{
             name: "active"
             PropertyChanges { target: usedLetterImage; visible: false }
-            PropertyChanges { target: rootArea; hoverEnabled: true }
+            PropertyChanges { target: rootArea; hoverEnabled: !UiManager.isAndroidDevice }
             PropertyChanges { target: rootArea; enabled: true }
         },
         State{

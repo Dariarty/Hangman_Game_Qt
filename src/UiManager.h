@@ -27,6 +27,8 @@ class UiManager : public QObject
 
     Q_PROPERTY(bool isFullScreen READ isFullScreen NOTIFY isFullScreenChanged)
 
+    Q_PROPERTY(bool isAndroidDevice READ isAndroidDevice CONSTANT)
+
 public:
     UiManager(QObject *parent = NULL);
     ~UiManager() = default;
@@ -35,6 +37,9 @@ public:
 
     Q_INVOKABLE void fullScreenButtonPressed();
     Q_INVOKABLE void minimizeButtonPressed();
+
+    //For platform-specific features
+    bool isAndroidDevice() const;
 
 signals:
     void isFullScreenChanged(bool fullScreenState);

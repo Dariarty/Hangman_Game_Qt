@@ -12,7 +12,7 @@ Row{
     WindowButton{
         id: minimizeButton
 
-        visible: UiManager.isFullScreen
+        visible: UiManager.isFullScreen && !UiManager.isAndroidDevice
         source: "qrc:/resources/icons/minimize.png"
         onClicked: UiManager.minimizeButtonPressed()
         onReleased: Sound.playSound("click")
@@ -21,6 +21,7 @@ Row{
     WindowButton{
         id: fullScreenButtonArea
 
+        visible: !UiManager.isAndroidDevice
         source: UiManager.isFullScreen ?
                     "qrc:/resources/icons/exit_fullscreen.png" :
                     "qrc:/resources/icons/enter_fullscreen.png"
@@ -31,7 +32,7 @@ Row{
     WindowButton{
         id: exitButtonArea
 
-        visible: UiManager.isFullScreen
+        visible: UiManager.isFullScreen || UiManager.isAndroidDevice
         source: "qrc:/resources/icons/exit.png"
         onClicked: Qt.quit()
     }
