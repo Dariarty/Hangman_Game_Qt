@@ -41,7 +41,7 @@
 Минимальная поддерживаемая версия Qt 5.10. Также приложение может быть собрано на Qt6, протестирована сборка на Qt 6.7.2 </br>
 
 1.  Загрузить Qt5.10+/Qt6, Qt Creator и компилятор MinGW.</br>
-2.  Сконфигурировать Desktop Kit в Qt Creator. </br>
+2.  Сконфигурировать Desktop Kit или WebAssembly в Qt Creator. </br>
 3.  Склонировать репозиторий
      ```sh
      git clone https://github.com/Dariarty/Hangman_Game_Qt.git
