@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/Dariarty/Hangman_Game_Qt/blob/main/README.md)
 [![ru](https://img.shields.io/badge/lang-ru-red.svg)](https://github.com/Dariarty/Hangman_Game_Qt/blob/main/README.ru.md)
 
-Кроссплатформенная игра "Виселица", написанная на C++/Qt/QML. </br> 
+Кроссплатформенная игра "Виселица", написанная на C++/Qt/QML для Windows, Linux, Android и WebAssembly. </br> 
 
 Виселица - это игра на угадывание слов. Программа случайным образом выбирает слово, которое должен угадать игрок. Изначально известно количество букв, и каждая буква обозначается чертой. С каждым ходом игрок предлагает букву, если она есть в слове - эта буква открывается, если нет - к рисунку виселицы добавляется черта. Если рисунок повешенного человечка завершен, игрок проигрывает. Для победы надо назвать все буквы в слове. 
 
@@ -37,11 +37,11 @@
 ![alt text](assets/ru_RU/defeat.jpg)
 
 ## Сборка исходного кода
-На данный момент поддерживается сборка на Windows, Linux и WebAssembly (с использованием Qt for WebAssembly).</br>
+На данный момент поддерживается сборка на Windows, Linux, Android и WebAssembly (с использованием Qt for WebAssembly).</br>
 Минимальная поддерживаемая версия Qt 5.10. Также приложение может быть собрано на Qt6, протестирована сборка на Qt 6.7.2 </br>
 
 1.  Загрузить Qt5.10+/Qt6, Qt Creator и компилятор MinGW.</br>
-2.  Сконфигурировать Desktop Kit или WebAssembly в Qt Creator. </br>
+2.  Сконфигурировать kit в Qt Creator для целевого устройства. </br>
 3.  Склонировать репозиторий
      ```sh
      git clone https://github.com/Dariarty/Hangman_Game_Qt.git
