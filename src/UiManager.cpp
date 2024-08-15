@@ -74,6 +74,15 @@ bool UiManager::isAndroidDevice() const
 #endif
 }
 
+bool UiManager::isWebAssembly() const
+{
+#if defined(__EMSCRIPTEN__) || defined(__wasm__) || defined(__wasm32__) || defined(__wasm64__)
+    return true;
+#else
+    return false;
+#endif
+}
+
 void UiManager::fullScreenButtonPressed()
 {
     toggleFullScreen();

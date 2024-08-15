@@ -6,6 +6,7 @@ import "../components"
 
 Row{
     id: windowButtonsRow
+    visible: !UiManager.isWebAssembly
 
     spacing: 30 * ratio
 
