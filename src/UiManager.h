@@ -48,6 +48,7 @@ signals:
 
 private:
     void qmlRegister();
+    void initTranslator();
     void loadUi();
 
     QSharedPointer<SoundManager> soundManager_;

@@ -12,11 +12,11 @@ UiManager::UiManager(QObject *parent)
       view_(new QQuickView()),
       window_was_maximized_(false)
 {
-  translator_->initTranslation();
+    qmlRegister();
 
-  qmlRegister();
+    initTranslator();
 
-  loadUi();
+    loadUi();
 }
 
 void UiManager::qmlRegister()
@@ -26,6 +26,16 @@ void UiManager::qmlRegister()
     view_->engine()->rootContext()->setContextProperty("GameMenu", menu_.data());
     view_->engine()->rootContext()->setContextProperty("Game", game_.data());
     view_->engine()->rootContext()->setContextProperty("Sound", soundManager_.data());
+}
+
+void UiManager::initTranslator()
+{
+    translator_->initTranslation();
+
+    //Connect retranslating UI
+    connect(translator_.data(), &Translator::languageChanged, this, [=]() {
+        view_->engine()->retranslate();
+    });
 }
 
 void UiManager::loadUi()
@@ -43,11 +53,6 @@ void UiManager::loadUi()
 
     //Connect closing signal
     connect(view_->engine(), &QQmlApplicationEngine::quit, this, [=]() { view_->close(); });
-
-    //Connect retranslating UI
-    connect(translator_.data(), &Translator::languageChanged, this, [=]() {
-        view_->engine()->retranslate();
-    });
 
     //Set Source QML File
     view_->setSource(QUrl(kMainQmlName));

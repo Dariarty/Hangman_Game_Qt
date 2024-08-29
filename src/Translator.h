@@ -23,7 +23,6 @@ public:
     void initTranslation();
 
     QString language() const;
-
     QString alphabet() const;
 
     Q_INVOKABLE void setLanguage(const QString &newLanguage);
@@ -33,7 +32,7 @@ signals:
     void alphabetChanged();
 
 private:
-    QTranslator *translator_;
+    QScopedPointer<QTranslator> translator_;
 
     bool translationLoaded_;
 
