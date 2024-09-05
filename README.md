@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/Dariarty/Hangman_Game_Qt/blob/main/README.md)
 [![ru](https://img.shields.io/badge/lang-ru-red.svg)](https://github.com/Dariarty/Hangman_Game_Qt/blob/main/README.ru.md)
 
-<a href="https://dariarty.github.io/Hangman_Game_Qt/" title="GitHub Pages link">Click to play in browser (PC) - WebAssembly version hosted on GitHub Pages</a>
+<a href="https://dariarty.github.io/Hangman_Game_Qt/" title="GitHub Pages link">Click to play in browser - WebAssembly version hosted on GitHub Pages</a>
 
 Cross-platform Hangman game made with C++/Qt/QML for Windows, Linux, Android and WebAssembly. </br> 
 
