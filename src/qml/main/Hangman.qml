@@ -68,6 +68,7 @@ Rectangle{
     WindowButton{
         id: soundMuteButton
 
+        visible: !warningScreen.visible
         source: Sound.muted ? "qrc:/resources/icons/sound_disabled.png" :
                               "qrc:/resources/icons/sound_enabled.png"
 
