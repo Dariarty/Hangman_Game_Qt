@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/Dariarty/Hangman_Game_Qt/blob/main/README.md)
 [![ru](https://img.shields.io/badge/lang-ru-red.svg)](https://github.com/Dariarty/Hangman_Game_Qt/blob/main/README.ru.md)
 
-<a href="https://dariarty.github.io/Hangman_Game_Qt/" title="GitHub Pages link">Играть в браузере (ПК) - версия WebAssembly на хостинге GitHub Pages</a>
+<a href="https://dariarty.github.io/Hangman_Game_Qt/" title="GitHub Pages link">Играть в браузере - версия WebAssembly на хостинге GitHub Pages</a>
 
 Кроссплатформенная игра "Виселица", написанная на C++/Qt/QML для Windows, Linux, Android и WebAssembly. </br> 
 
