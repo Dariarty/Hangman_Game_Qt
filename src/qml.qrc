@@ -18,5 +18,6 @@
         <file>qml/components/MenuLabel.qml</file>
         <file>qml/components/SwitchScreenButton.qml</file>
         <file>qtquickcontrols2.conf</file>
+        <file>qml/screens/PortraitWarningScreen.qml</file>
     </qresource>
 </RCC>

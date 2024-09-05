@@ -48,6 +48,7 @@ Rectangle{
 
     StackLayout{
         id: layout
+        visible: !warningScreen.visible
         anchors.fill: parent
         currentIndex: 0
 
@@ -97,5 +98,10 @@ Rectangle{
             topMargin: 30 * ratio
         }
 
+    }
+
+    PortraitWarningScreen{
+        id: warningScreen
+        visible: root.height > root.width
     }
 }
