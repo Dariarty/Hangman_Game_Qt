@@ -48,7 +48,7 @@ MouseArea{
         id: usedLetterImage
         anchors.fill: parent
 
-        fillMode: Image.Stretch
+        fillMode: Image.PreserveAspectFit
         visible: false
         opacity: 0.8
     }

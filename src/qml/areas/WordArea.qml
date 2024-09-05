@@ -50,8 +50,6 @@ Rectangle {
         bottom: keyboardRect.top
         rightMargin: 80
         leftMargin: 30
-        bottomMargin: 30
-        topMargin: 30
     }
 
     ListModel{
