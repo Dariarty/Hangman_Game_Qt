@@ -69,6 +69,19 @@
     </message>
 </context>
 <context>
+    <name>PortraitWarningScreen</name>
+    <message>
+        <location filename="../qml/screens/PortraitWarningScreen.qml" line="21"/>
+        <source>Game is available in landscape mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/screens/PortraitWarningScreen.qml" line="22"/>
+        <source>Please rotate your device</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>WordArea</name>
     <message>
         <location filename="../qml/areas/WordArea.qml" line="37"/>
@@ -81,12 +94,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/areas/WordArea.qml" line="129"/>
+        <location filename="../qml/areas/WordArea.qml" line="134"/>
         <source>Play again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/areas/WordArea.qml" line="144"/>
+        <location filename="../qml/areas/WordArea.qml" line="149"/>
         <source>To menu</source>
         <translation type="unfinished"></translation>
     </message>
