@@ -3,6 +3,8 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/Dariarty/Hangman_Game_Qt/blob/main/README.md)
 [![ru](https://img.shields.io/badge/lang-ru-red.svg)](https://github.com/Dariarty/Hangman_Game_Qt/blob/main/README.ru.md)
 
+<a href="https://dariarty.github.io/Hangman_Game_Qt/" title="GitHub Pages link">Играть в браузере - версия WebAssembly на хостинге GitHub Pages</a>
+
 Кроссплатформенная игра "Виселица", написанная на C++/Qt/QML для Windows, Linux, Android и WebAssembly. </br> 
 
 Виселица - это игра на угадывание слов. Программа случайным образом выбирает слово, которое должен угадать игрок. Изначально известно количество букв, и каждая буква обозначается чертой. С каждым ходом игрок предлагает букву, если она есть в слове - эта буква открывается, если нет - к рисунку виселицы добавляется черта. Если рисунок повешенного человечка завершен, игрок проигрывает. Для победы надо назвать все буквы в слове. 
@@ -54,7 +56,7 @@
 
 ## Атрибуция
 
-Иконка приложения создана [Freepik](https://freepik.com)
+<a href="https://www.freepik.com/icon/hangman_3401289#fromView=keyword&page=1&position=6&uuid=05e78836-b3a9-48e0-9ded-0f79c2320b2e" title="App Icon Attribution">Иконка приложения создана Freepik</a>
 
 ## Лицензия
 
