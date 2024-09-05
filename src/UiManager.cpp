@@ -61,6 +61,10 @@ void UiManager::loadUi()
     if (isAndroidDevice())
         view_->show();
 
+    //For WebAssembly, mute sound
+    if (isWebAssembly())
+        soundManager_->switchMute();
+
     //Show App in FullScreen
     toggleFullScreen();
 }
